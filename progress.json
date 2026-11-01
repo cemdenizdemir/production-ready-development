@@ -1,0 +1,804 @@
+{
+  "generatedAt": "2026-11-01",
+  "totals": {
+    "topics": 41,
+    "topicsDone": 0,
+    "tasks": 0,
+    "tasksDone": 0,
+    "reviewed": 0,
+    "avgScore": null,
+    "checklist": {
+      "total": 0,
+      "done": 0,
+      "percent": 0
+    }
+  },
+  "modules": [
+    {
+      "slug": "01-foundations",
+      "title": "Foundations",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-git",
+          "path": "modules/01-foundations/01-git",
+          "title": "Git & Collaboration",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-http-networking",
+          "path": "modules/01-foundations/02-http-networking",
+          "title": "HTTP & Networking",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-testing",
+          "path": "modules/01-foundations/03-testing",
+          "title": "Testing",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-ci-cd",
+          "path": "modules/01-foundations/04-ci-cd",
+          "title": "CI/CD",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-code-quality",
+          "path": "modules/01-foundations/05-code-quality",
+          "title": "Code Quality & Tooling",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-security",
+          "path": "modules/01-foundations/06-security",
+          "title": "Security Fundamentals",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "07-config-environments",
+          "path": "modules/01-foundations/07-config-environments",
+          "title": "Config & Environments",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "08-documentation",
+          "path": "modules/01-foundations/08-documentation",
+          "title": "Documentation",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "02-frontend",
+      "title": "Frontend",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-html",
+          "path": "modules/02-frontend/01-html",
+          "title": "HTML",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-css",
+          "path": "modules/02-frontend/02-css",
+          "title": "CSS",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-javascript",
+          "path": "modules/02-frontend/03-javascript",
+          "title": "JavaScript",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-framework",
+          "path": "modules/02-frontend/04-framework",
+          "title": "Framework (React / Vue / Angular / Svelte)",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-state-management",
+          "path": "modules/02-frontend/05-state-management",
+          "title": "State Management",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-rendering",
+          "path": "modules/02-frontend/06-rendering",
+          "title": "Rendering Strategies",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "07-performance",
+          "path": "modules/02-frontend/07-performance",
+          "title": "Performance",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "08-accessibility",
+          "path": "modules/02-frontend/08-accessibility",
+          "title": "Accessibility",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "09-ux-states",
+          "path": "modules/02-frontend/09-ux-states",
+          "title": "UX States & Error Handling",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "10-forms",
+          "path": "modules/02-frontend/10-forms",
+          "title": "Forms & Validation",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "11-security",
+          "path": "modules/02-frontend/11-security",
+          "title": "Frontend Security",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "12-cross-cutting",
+          "path": "modules/02-frontend/12-cross-cutting",
+          "title": "Cross-Cutting Frontend",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "13-testing-monitoring",
+          "path": "modules/02-frontend/13-testing-monitoring",
+          "title": "Frontend Testing & Monitoring",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "03-backend",
+      "title": "Backend",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-language-runtime",
+          "path": "modules/03-backend/01-language-runtime",
+          "title": "Language & Runtime",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-api-design",
+          "path": "modules/03-backend/02-api-design",
+          "title": "API Design",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-databases",
+          "path": "modules/03-backend/03-databases",
+          "title": "Databases",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-auth",
+          "path": "modules/03-backend/04-auth",
+          "title": "Authentication & Authorization",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-validation-abuse",
+          "path": "modules/03-backend/05-validation-abuse",
+          "title": "Validation & Abuse Protection",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-caching",
+          "path": "modules/03-backend/06-caching",
+          "title": "Caching",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "07-background-jobs",
+          "path": "modules/03-backend/07-background-jobs",
+          "title": "Background Jobs & Messaging",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "08-reliability",
+          "path": "modules/03-backend/08-reliability",
+          "title": "Reliability & Resilience",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "09-scalability",
+          "path": "modules/03-backend/09-scalability",
+          "title": "Scalability & Performance",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "10-observability",
+          "path": "modules/03-backend/10-observability",
+          "title": "Observability",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "11-architecture",
+          "path": "modules/03-backend/11-architecture",
+          "title": "Architecture",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "12-integrations",
+          "path": "modules/03-backend/12-integrations",
+          "title": "Common Integrations",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "04-shipping",
+      "title": "Shipping",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-containers",
+          "path": "modules/04-shipping/01-containers",
+          "title": "Containers",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-cloud",
+          "path": "modules/04-shipping/02-cloud",
+          "title": "Cloud",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-iac",
+          "path": "modules/04-shipping/03-iac",
+          "title": "Infrastructure as Code",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-deployments",
+          "path": "modules/04-shipping/04-deployments",
+          "title": "Deployments",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-data-safety",
+          "path": "modules/04-shipping/05-data-safety",
+          "title": "Data Safety",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-incident-response",
+          "path": "modules/04-shipping/06-incident-response",
+          "title": "Incident Response",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "05-practice",
+      "title": "Practice",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-engineering-practice",
+          "path": "modules/05-practice/01-engineering-practice",
+          "title": "Engineering Practice",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "06-capstone",
+      "title": "Capstone",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-pre-launch",
+          "path": "modules/06-capstone/01-pre-launch",
+          "title": "Pre-Launch Checklist",
+          "tech": null,
+          "status": "not started",
+          "docs": 0,
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 0,
+            "done": 0
+          }
+        }
+      ]
+    }
+  ]
+}
