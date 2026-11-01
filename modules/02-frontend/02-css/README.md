@@ -1,7 +1,7 @@
 ---
 title: CSS
 module: 02-frontend
-tech: —
+tech: CSS, then Tailwind CSS 4
 ---
 # CSS
 [← Dashboard](../../../README.md)

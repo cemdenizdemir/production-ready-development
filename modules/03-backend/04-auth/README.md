@@ -1,7 +1,7 @@
 ---
 title: Authentication & Authorization
 module: 03-backend
-tech: —
+tech: Express 5, Redis 8, argon2, Better Auth
 ---
 # Authentication & Authorization
 [← Dashboard](../../../README.md)

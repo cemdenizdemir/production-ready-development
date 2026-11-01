@@ -1,7 +1,7 @@
 ---
 title: Git & Collaboration
 module: 01-foundations
-tech: —
+tech: Git, GitHub
 ---
 # Git & Collaboration
 [← Dashboard](../../../README.md)

@@ -1,7 +1,7 @@
 ---
 title: CI/CD
 module: 01-foundations
-tech: —
+tech: GitHub Actions, pnpm, Docker
 ---
 # CI/CD
 [← Dashboard](../../../README.md)

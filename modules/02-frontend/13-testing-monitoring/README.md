@@ -1,7 +1,7 @@
 ---
 title: Frontend Testing & Monitoring
 module: 02-frontend
-tech: —
+tech: Vitest 4, Testing Library, MSW, Playwright, Sentry
 ---
 # Frontend Testing & Monitoring
 [← Dashboard](../../../README.md)

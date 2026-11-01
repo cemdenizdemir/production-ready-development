@@ -1,7 +1,7 @@
 ---
 title: HTML
 module: 02-frontend
-tech: —
+tech: HTML
 ---
 # HTML
 [← Dashboard](../../../README.md)

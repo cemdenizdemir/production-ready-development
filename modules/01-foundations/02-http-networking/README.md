@@ -1,7 +1,7 @@
 ---
 title: HTTP & Networking
 module: 01-foundations
-tech: —
+tech: HTTP, Node.js 26, Express 5, curl, Chrome DevTools
 ---
 # HTTP & Networking
 [← Dashboard](../../../README.md)

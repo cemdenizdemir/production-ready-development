@@ -1,7 +1,7 @@
 ---
 title: Rendering Strategies
 module: 02-frontend
-tech: —
+tech: Next.js 16, React 19.2
 ---
 # Rendering Strategies
 [← Dashboard](../../../README.md)

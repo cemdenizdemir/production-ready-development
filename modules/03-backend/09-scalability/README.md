@@ -1,7 +1,7 @@
 ---
 title: Scalability & Performance
 module: 03-backend
-tech: —
+tech: Node.js 26, PostgreSQL 18, Redis 8, k6
 ---
 # Scalability & Performance
 [← Dashboard](../../../README.md)

@@ -1,7 +1,7 @@
 ---
 title: Infrastructure as Code
 module: 04-shipping
-tech: —
+tech: Terraform
 ---
 # Infrastructure as Code
 [← Dashboard](../../../README.md)

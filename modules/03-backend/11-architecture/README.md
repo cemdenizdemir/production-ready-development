@@ -1,7 +1,7 @@
 ---
 title: Architecture
 module: 03-backend
-tech: —
+tech: Node.js 26, Express 5, TypeScript
 ---
 # Architecture
 [← Dashboard](../../../README.md)

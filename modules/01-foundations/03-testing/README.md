@@ -1,7 +1,7 @@
 ---
 title: Testing
 module: 01-foundations
-tech: —
+tech: Vitest 4, Supertest, TypeScript
 ---
 # Testing
 [← Dashboard](../../../README.md)

@@ -1,7 +1,7 @@
 ---
 title: Cloud
 module: 04-shipping
-tech: —
+tech: AWS (ECS Fargate, RDS, ElastiCache, S3), MongoDB Atlas
 ---
 # Cloud
 [← Dashboard](../../../README.md)

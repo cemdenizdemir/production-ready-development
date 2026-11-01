@@ -24,7 +24,7 @@
           "slug": "01-git",
           "path": "modules/01-foundations/01-git",
           "title": "Git & Collaboration",
-          "tech": null,
+          "tech": "Git, GitHub",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -42,7 +42,7 @@
           "slug": "02-http-networking",
           "path": "modules/01-foundations/02-http-networking",
           "title": "HTTP & Networking",
-          "tech": null,
+          "tech": "HTTP, Node.js 26, Express 5, curl, Chrome DevTools",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -60,7 +60,7 @@
           "slug": "03-testing",
           "path": "modules/01-foundations/03-testing",
           "title": "Testing",
-          "tech": null,
+          "tech": "Vitest 4, Supertest, TypeScript",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -78,7 +78,7 @@
           "slug": "04-ci-cd",
           "path": "modules/01-foundations/04-ci-cd",
           "title": "CI/CD",
-          "tech": null,
+          "tech": "GitHub Actions, pnpm, Docker",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -96,7 +96,7 @@
           "slug": "05-code-quality",
           "path": "modules/01-foundations/05-code-quality",
           "title": "Code Quality & Tooling",
-          "tech": null,
+          "tech": "ESLint, typescript-eslint, Prettier, TypeScript 6 (strict)",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -114,7 +114,7 @@
           "slug": "06-security",
           "path": "modules/01-foundations/06-security",
           "title": "Security Fundamentals",
-          "tech": null,
+          "tech": "Node.js 26, Express 5, Helmet, express-rate-limit, Dependabot, CodeQL, gitleaks",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -132,7 +132,7 @@
           "slug": "07-config-environments",
           "path": "modules/01-foundations/07-config-environments",
           "title": "Config & Environments",
-          "tech": null,
+          "tech": "Node.js 26 (--env-file), Zod 4, Docker Compose",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -150,7 +150,7 @@
           "slug": "08-documentation",
           "path": "modules/01-foundations/08-documentation",
           "title": "Documentation",
-          "tech": null,
+          "tech": "Markdown, OpenAPI 3.1 (from Zod), Scalar",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -176,7 +176,7 @@
           "slug": "01-html",
           "path": "modules/02-frontend/01-html",
           "title": "HTML",
-          "tech": null,
+          "tech": "HTML",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -194,7 +194,7 @@
           "slug": "02-css",
           "path": "modules/02-frontend/02-css",
           "title": "CSS",
-          "tech": null,
+          "tech": "CSS, then Tailwind CSS 4",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -212,7 +212,7 @@
           "slug": "03-javascript",
           "path": "modules/02-frontend/03-javascript",
           "title": "JavaScript",
-          "tech": null,
+          "tech": "JavaScript, TypeScript",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -230,7 +230,7 @@
           "slug": "04-framework",
           "path": "modules/02-frontend/04-framework",
           "title": "Framework (React / Vue / Angular / Svelte)",
-          "tech": null,
+          "tech": "React 19.2, TypeScript, Vite 8",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -248,7 +248,7 @@
           "slug": "05-state-management",
           "path": "modules/02-frontend/05-state-management",
           "title": "State Management",
-          "tech": null,
+          "tech": "React 19.2, TanStack Query 5",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -266,7 +266,7 @@
           "slug": "06-rendering",
           "path": "modules/02-frontend/06-rendering",
           "title": "Rendering Strategies",
-          "tech": null,
+          "tech": "Next.js 16, React 19.2",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -284,7 +284,7 @@
           "slug": "07-performance",
           "path": "modules/02-frontend/07-performance",
           "title": "Performance",
-          "tech": null,
+          "tech": "React 19.2, Next.js 16, Vite 8, Lighthouse",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -302,7 +302,7 @@
           "slug": "08-accessibility",
           "path": "modules/02-frontend/08-accessibility",
           "title": "Accessibility",
-          "tech": null,
+          "tech": "HTML, React 19.2, axe-core, Playwright",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -320,7 +320,7 @@
           "slug": "09-ux-states",
           "path": "modules/02-frontend/09-ux-states",
           "title": "UX States & Error Handling",
-          "tech": null,
+          "tech": "React 19.2, TanStack Query 5, Tailwind CSS 4",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -338,7 +338,7 @@
           "slug": "10-forms",
           "path": "modules/02-frontend/10-forms",
           "title": "Forms & Validation",
-          "tech": null,
+          "tech": "React Hook Form 7, Zod 4, React 19.2",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -356,7 +356,7 @@
           "slug": "11-security",
           "path": "modules/02-frontend/11-security",
           "title": "Frontend Security",
-          "tech": null,
+          "tech": "React 19.2, Next.js 16, CSP",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -374,7 +374,7 @@
           "slug": "12-cross-cutting",
           "path": "modules/02-frontend/12-cross-cutting",
           "title": "Cross-Cutting Frontend",
-          "tech": null,
+          "tech": "React 19.2, TypeScript, Tailwind CSS 4",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -392,7 +392,7 @@
           "slug": "13-testing-monitoring",
           "path": "modules/02-frontend/13-testing-monitoring",
           "title": "Frontend Testing & Monitoring",
-          "tech": null,
+          "tech": "Vitest 4, Testing Library, MSW, Playwright, Sentry",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -418,7 +418,7 @@
           "slug": "01-language-runtime",
           "path": "modules/03-backend/01-language-runtime",
           "title": "Language & Runtime",
-          "tech": null,
+          "tech": "Node.js 26, TypeScript 6 (strict)",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -436,7 +436,7 @@
           "slug": "02-api-design",
           "path": "modules/03-backend/02-api-design",
           "title": "API Design",
-          "tech": null,
+          "tech": "Express 5, Zod 4, OpenAPI 3.1",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -454,7 +454,7 @@
           "slug": "03-databases",
           "path": "modules/03-backend/03-databases",
           "title": "Databases",
-          "tech": null,
+          "tech": "PostgreSQL 18, pg, Drizzle ORM, MongoDB 8, Mongoose",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -472,7 +472,7 @@
           "slug": "04-auth",
           "path": "modules/03-backend/04-auth",
           "title": "Authentication & Authorization",
-          "tech": null,
+          "tech": "Express 5, Redis 8, argon2, Better Auth",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -490,7 +490,7 @@
           "slug": "05-validation-abuse",
           "path": "modules/03-backend/05-validation-abuse",
           "title": "Validation & Abuse Protection",
-          "tech": null,
+          "tech": "Zod 4, express-rate-limit, Redis 8",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -508,7 +508,7 @@
           "slug": "06-caching",
           "path": "modules/03-backend/06-caching",
           "title": "Caching",
-          "tech": null,
+          "tech": "Redis 8",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -526,7 +526,7 @@
           "slug": "07-background-jobs",
           "path": "modules/03-backend/07-background-jobs",
           "title": "Background Jobs & Messaging",
-          "tech": null,
+          "tech": "BullMQ, Redis 8",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -544,7 +544,7 @@
           "slug": "08-reliability",
           "path": "modules/03-backend/08-reliability",
           "title": "Reliability & Resilience",
-          "tech": null,
+          "tech": "Node.js 26, Express 5, BullMQ",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -562,7 +562,7 @@
           "slug": "09-scalability",
           "path": "modules/03-backend/09-scalability",
           "title": "Scalability & Performance",
-          "tech": null,
+          "tech": "Node.js 26, PostgreSQL 18, Redis 8, k6",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -580,7 +580,7 @@
           "slug": "10-observability",
           "path": "modules/03-backend/10-observability",
           "title": "Observability",
-          "tech": null,
+          "tech": "Pino, OpenTelemetry, Grafana LGTM, Sentry",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -598,7 +598,7 @@
           "slug": "11-architecture",
           "path": "modules/03-backend/11-architecture",
           "title": "Architecture",
-          "tech": null,
+          "tech": "Node.js 26, Express 5, TypeScript",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -616,7 +616,7 @@
           "slug": "12-integrations",
           "path": "modules/03-backend/12-integrations",
           "title": "Common Integrations",
-          "tech": null,
+          "tech": "Stripe, AWS SES, AWS S3, BullMQ",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -642,7 +642,7 @@
           "slug": "01-containers",
           "path": "modules/04-shipping/01-containers",
           "title": "Containers",
-          "tech": null,
+          "tech": "Docker, Docker Compose",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -660,7 +660,7 @@
           "slug": "02-cloud",
           "path": "modules/04-shipping/02-cloud",
           "title": "Cloud",
-          "tech": null,
+          "tech": "AWS (ECS Fargate, RDS, ElastiCache, S3), MongoDB Atlas",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -678,7 +678,7 @@
           "slug": "03-iac",
           "path": "modules/04-shipping/03-iac",
           "title": "Infrastructure as Code",
-          "tech": null,
+          "tech": "Terraform",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -696,7 +696,7 @@
           "slug": "04-deployments",
           "path": "modules/04-shipping/04-deployments",
           "title": "Deployments",
-          "tech": null,
+          "tech": "GitHub Actions, Docker, AWS ECS",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -714,7 +714,7 @@
           "slug": "05-data-safety",
           "path": "modules/04-shipping/05-data-safety",
           "title": "Data Safety",
-          "tech": null,
+          "tech": "PostgreSQL 18, AWS RDS backups, Drizzle Kit migrations, MongoDB Atlas backups",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -732,7 +732,7 @@
           "slug": "06-incident-response",
           "path": "modules/04-shipping/06-incident-response",
           "title": "Incident Response",
-          "tech": null,
+          "tech": "Sentry, Grafana, OpenTelemetry",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -758,7 +758,7 @@
           "slug": "01-engineering-practice",
           "path": "modules/05-practice/01-engineering-practice",
           "title": "Engineering Practice",
-          "tech": null,
+          "tech": "Git, GitHub",
           "status": "not started",
           "docs": 0,
           "tasks": {
@@ -784,7 +784,7 @@
           "slug": "01-pre-launch",
           "path": "modules/06-capstone/01-pre-launch",
           "title": "Pre-Launch Checklist",
-          "tech": null,
+          "tech": "Next.js 16, Express 5, PostgreSQL 18, Redis 8, AWS, Terraform",
           "status": "not started",
           "docs": 0,
           "tasks": {

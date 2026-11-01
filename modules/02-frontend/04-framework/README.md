@@ -1,7 +1,7 @@
 ---
 title: Framework (React / Vue / Angular / Svelte)
 module: 02-frontend
-tech: —
+tech: React 19.2, TypeScript, Vite 8
 ---
 # Framework (React / Vue / Angular / Svelte)
 [← Dashboard](../../../README.md)

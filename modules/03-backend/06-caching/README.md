@@ -1,7 +1,7 @@
 ---
 title: Caching
 module: 03-backend
-tech: —
+tech: Redis 8
 ---
 # Caching
 [← Dashboard](../../../README.md)

@@ -1,7 +1,7 @@
 ---
 title: Documentation
 module: 01-foundations
-tech: —
+tech: Markdown, OpenAPI 3.1 (from Zod), Scalar
 ---
 # Documentation
 [← Dashboard](../../../README.md)

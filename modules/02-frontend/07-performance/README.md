@@ -1,7 +1,7 @@
 ---
 title: Performance
 module: 02-frontend
-tech: —
+tech: React 19.2, Next.js 16, Vite 8, Lighthouse
 ---
 # Performance
 [← Dashboard](../../../README.md)

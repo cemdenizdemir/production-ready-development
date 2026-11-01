@@ -1,7 +1,7 @@
 ---
 title: Observability
 module: 03-backend
-tech: —
+tech: Pino, OpenTelemetry, Grafana LGTM, Sentry
 ---
 # Observability
 [← Dashboard](../../../README.md)

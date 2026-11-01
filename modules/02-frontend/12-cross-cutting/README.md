@@ -1,7 +1,7 @@
 ---
 title: Cross-Cutting Frontend
 module: 02-frontend
-tech: —
+tech: React 19.2, TypeScript, Tailwind CSS 4
 ---
 # Cross-Cutting Frontend
 [← Dashboard](../../../README.md)

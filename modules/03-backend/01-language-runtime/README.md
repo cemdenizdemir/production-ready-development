@@ -1,7 +1,7 @@
 ---
 title: Language & Runtime
 module: 03-backend
-tech: —
+tech: Node.js 26, TypeScript 6 (strict)
 ---
 # Language & Runtime
 [← Dashboard](../../../README.md)

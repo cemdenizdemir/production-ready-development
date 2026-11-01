@@ -1,7 +1,7 @@
 ---
 title: Data Safety
 module: 04-shipping
-tech: —
+tech: PostgreSQL 18, AWS RDS backups, Drizzle Kit migrations, MongoDB Atlas backups
 ---
 # Data Safety
 [← Dashboard](../../../README.md)

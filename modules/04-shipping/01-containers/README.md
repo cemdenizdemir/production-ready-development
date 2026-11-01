@@ -1,7 +1,7 @@
 ---
 title: Containers
 module: 04-shipping
-tech: —
+tech: Docker, Docker Compose
 ---
 # Containers
 [← Dashboard](../../../README.md)

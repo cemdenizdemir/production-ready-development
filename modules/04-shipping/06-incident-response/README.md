@@ -1,7 +1,7 @@
 ---
 title: Incident Response
 module: 04-shipping
-tech: —
+tech: Sentry, Grafana, OpenTelemetry
 ---
 # Incident Response
 [← Dashboard](../../../README.md)

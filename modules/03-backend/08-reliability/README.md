@@ -1,7 +1,7 @@
 ---
 title: Reliability & Resilience
 module: 03-backend
-tech: —
+tech: Node.js 26, Express 5, BullMQ
 ---
 # Reliability & Resilience
 [← Dashboard](../../../README.md)

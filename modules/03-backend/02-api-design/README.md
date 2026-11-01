@@ -1,7 +1,7 @@
 ---
 title: API Design
 module: 03-backend
-tech: —
+tech: Express 5, Zod 4, OpenAPI 3.1
 ---
 # API Design
 [← Dashboard](../../../README.md)

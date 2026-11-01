@@ -1,7 +1,7 @@
 ---
 title: Validation & Abuse Protection
 module: 03-backend
-tech: —
+tech: Zod 4, express-rate-limit, Redis 8
 ---
 # Validation & Abuse Protection
 [← Dashboard](../../../README.md)

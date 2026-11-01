@@ -1,7 +1,7 @@
 ---
 title: Forms & Validation
 module: 02-frontend
-tech: —
+tech: React Hook Form 7, Zod 4, React 19.2
 ---
 # Forms & Validation
 [← Dashboard](../../../README.md)

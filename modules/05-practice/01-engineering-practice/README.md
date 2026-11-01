@@ -1,7 +1,7 @@
 ---
 title: Engineering Practice
 module: 05-practice
-tech: —
+tech: Git, GitHub
 ---
 # Engineering Practice
 [← Dashboard](../../../README.md)

@@ -1,7 +1,7 @@
 ---
 title: Pre-Launch Checklist
 module: 06-capstone
-tech: —
+tech: Next.js 16, Express 5, PostgreSQL 18, Redis 8, AWS, Terraform
 ---
 # Pre-Launch Checklist
 [← Dashboard](../../../README.md)

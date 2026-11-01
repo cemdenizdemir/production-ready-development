@@ -1,7 +1,7 @@
 ---
 title: Config & Environments
 module: 01-foundations
-tech: —
+tech: Node.js 26 (--env-file), Zod 4, Docker Compose
 ---
 # Config & Environments
 [← Dashboard](../../../README.md)

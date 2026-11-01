@@ -1,7 +1,7 @@
 ---
 title: Deployments
 module: 04-shipping
-tech: —
+tech: GitHub Actions, Docker, AWS ECS
 ---
 # Deployments
 [← Dashboard](../../../README.md)

@@ -1,7 +1,7 @@
 ---
 title: Background Jobs & Messaging
 module: 03-backend
-tech: —
+tech: BullMQ, Redis 8
 ---
 # Background Jobs & Messaging
 [← Dashboard](../../../README.md)

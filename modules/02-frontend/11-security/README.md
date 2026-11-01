@@ -1,7 +1,7 @@
 ---
 title: Frontend Security
 module: 02-frontend
-tech: —
+tech: React 19.2, Next.js 16, CSP
 ---
 # Frontend Security
 [← Dashboard](../../../README.md)

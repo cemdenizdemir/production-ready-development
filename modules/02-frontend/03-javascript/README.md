@@ -1,7 +1,7 @@
 ---
 title: JavaScript
 module: 02-frontend
-tech: —
+tech: JavaScript, TypeScript
 ---
 # JavaScript
 [← Dashboard](../../../README.md)

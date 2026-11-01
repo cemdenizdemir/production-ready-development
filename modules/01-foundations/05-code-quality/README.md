@@ -1,7 +1,7 @@
 ---
 title: Code Quality & Tooling
 module: 01-foundations
-tech: —
+tech: ESLint, typescript-eslint, Prettier, TypeScript 6 (strict)
 ---
 # Code Quality & Tooling
 [← Dashboard](../../../README.md)

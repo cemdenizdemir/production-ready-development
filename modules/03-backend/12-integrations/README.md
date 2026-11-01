@@ -1,7 +1,7 @@
 ---
 title: Common Integrations
 module: 03-backend
-tech: —
+tech: Stripe, AWS SES, AWS S3, BullMQ
 ---
 # Common Integrations
 [← Dashboard](../../../README.md)

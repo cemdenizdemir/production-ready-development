@@ -1,7 +1,7 @@
 ---
 title: Accessibility
 module: 02-frontend
-tech: —
+tech: HTML, React 19.2, axe-core, Playwright
 ---
 # Accessibility
 [← Dashboard](../../../README.md)

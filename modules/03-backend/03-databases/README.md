@@ -1,7 +1,7 @@
 ---
 title: Databases
 module: 03-backend
-tech: —
+tech: PostgreSQL 18, pg, Drizzle ORM, MongoDB 8, Mongoose
 ---
 # Databases
 [← Dashboard](../../../README.md)
