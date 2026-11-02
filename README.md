@@ -8,7 +8,7 @@ Fundamentals to production, one topic at a time.<br>
 <!-- AUTO:STATS -->
 <code>▱▱▱▱▱▱▱▱▱▱</code>&nbsp; <b>0%</b> mastery
 
-<b>0</b>/41 topics &nbsp;·&nbsp; <b>0</b>/0 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-01
+<b>0</b>/41 topics &nbsp;·&nbsp; <b>0</b>/4 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-02
 <!-- /AUTO:STATS -->
 
 <sub>○ not started &nbsp; ◔ learning &nbsp; ◑ building &nbsp; ◕ reviewing &nbsp; ● done</sub>
@@ -72,7 +72,7 @@ Paths accept numbers or names: `02-frontend/04-framework`, `frontend/framework`,
 
 | | Topic | Tech | Tasks | Score |
 |:-:|:--|:--|:-:|:-:|
-| ○ | [Git & Collaboration](modules/01-foundations/01-git) | Git, GitHub | — | — |
+| ◔ | [Git & Collaboration](modules/01-foundations/01-git) | Git, GitHub | 0/4 | — |
 | ○ | [HTTP & Networking](modules/01-foundations/02-http-networking) | HTTP, Node.js 26, Express 5, curl, Chrome DevTools | — | — |
 | ○ | [Testing](modules/01-foundations/03-testing) | Vitest 4, Supertest, TypeScript | — | — |
 | ○ | [CI/CD](modules/01-foundations/04-ci-cd) | GitHub Actions, pnpm, Docker | — | — |

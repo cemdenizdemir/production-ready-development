@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-01",
+  "generatedAt": "2026-11-02",
   "totals": {
     "topics": 41,
     "topicsDone": 0,
-    "tasks": 0,
+    "tasks": 4,
     "tasksDone": 0,
     "reviewed": 0,
     "avgScore": null,
     "checklist": {
-      "total": 0,
+      "total": 15,
       "done": 0,
       "percent": 0
     }
@@ -25,16 +25,16 @@
           "path": "modules/01-foundations/01-git",
           "title": "Git & Collaboration",
           "tech": "Git, GitHub",
-          "status": "not started",
-          "docs": 0,
+          "status": "learning",
+          "docs": 8,
           "tasks": {
-            "total": 0,
+            "total": 4,
             "done": 0
           },
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 15,
             "done": 0
           }
         },
