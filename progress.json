@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-02",
+  "generatedAt": "2026-11-07",
   "totals": {
-    "topics": 41,
+    "topics": 49,
     "topicsDone": 0,
     "tasks": 4,
     "tasksDone": 0,
     "reviewed": 0,
     "avgScore": null,
     "checklist": {
-      "total": 15,
+      "total": 580,
       "done": 0,
       "percent": 0
     }
@@ -17,6 +17,7 @@
     {
       "slug": "01-foundations",
       "title": "Foundations",
+      "cheatsheet": "modules/01-foundations/cheatsheet.md",
       "percent": 0,
       "topicsDone": 0,
       "topics": [
@@ -27,6 +28,7 @@
           "tech": "Git, GitHub",
           "status": "learning",
           "docs": 8,
+          "cheatsheet": "modules/01-foundations/01-git/docs/cheatsheet.md",
           "tasks": {
             "total": 4,
             "done": 0
@@ -44,7 +46,8 @@
           "title": "HTTP & Networking",
           "tech": "HTTP, Node.js 26, Express 5, curl, Chrome DevTools",
           "status": "not started",
-          "docs": 0,
+          "docs": 8,
+          "cheatsheet": "modules/01-foundations/02-http-networking/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -52,7 +55,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 13,
             "done": 0
           }
         },
@@ -62,7 +65,8 @@
           "title": "Testing",
           "tech": "Vitest 4, Supertest, TypeScript",
           "status": "not started",
-          "docs": 0,
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/03-testing/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -70,7 +74,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 13,
             "done": 0
           }
         },
@@ -80,7 +84,8 @@
           "title": "CI/CD",
           "tech": "GitHub Actions, pnpm, Docker",
           "status": "not started",
-          "docs": 0,
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/04-ci-cd/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -88,7 +93,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -98,7 +103,8 @@
           "title": "Code Quality & Tooling",
           "tech": "ESLint, typescript-eslint, Prettier, TypeScript 6 (strict)",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/01-foundations/05-code-quality/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -106,7 +112,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -116,7 +122,8 @@
           "title": "Security Fundamentals",
           "tech": "Node.js 26, Express 5, Helmet, express-rate-limit, Dependabot, CodeQL, gitleaks",
           "status": "not started",
-          "docs": 0,
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/06-security/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -124,7 +131,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 13,
             "done": 0
           }
         },
@@ -134,7 +141,8 @@
           "title": "Config & Environments",
           "tech": "Node.js 26 (--env-file), Zod 4, Docker Compose",
           "status": "not started",
-          "docs": 0,
+          "docs": 5,
+          "cheatsheet": "modules/01-foundations/07-config-environments/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -142,7 +150,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         },
@@ -152,7 +160,8 @@
           "title": "Documentation",
           "tech": "Markdown, OpenAPI 3.1 (from Zod), Scalar",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/01-foundations/08-documentation/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -160,7 +169,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         }
@@ -169,6 +178,7 @@
     {
       "slug": "02-frontend",
       "title": "Frontend",
+      "cheatsheet": "modules/02-frontend/cheatsheet.md",
       "percent": 0,
       "topicsDone": 0,
       "topics": [
@@ -178,7 +188,8 @@
           "title": "HTML",
           "tech": "HTML",
           "status": "not started",
-          "docs": 0,
+          "docs": 5,
+          "cheatsheet": "modules/02-frontend/01-html/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -186,7 +197,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 10,
             "done": 0
           }
         },
@@ -196,7 +207,8 @@
           "title": "CSS",
           "tech": "CSS, then Tailwind CSS 4",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/02-css/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -204,7 +216,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         },
@@ -214,7 +226,8 @@
           "title": "JavaScript",
           "tech": "JavaScript, TypeScript",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/03-javascript/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -222,7 +235,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -232,7 +245,8 @@
           "title": "Framework (React / Vue / Angular / Svelte)",
           "tech": "React 19.2, TypeScript, Vite 8",
           "status": "not started",
-          "docs": 0,
+          "docs": 7,
+          "cheatsheet": "modules/02-frontend/04-framework/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -240,7 +254,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 13,
             "done": 0
           }
         },
@@ -250,7 +264,8 @@
           "title": "State Management",
           "tech": "React 19.2, TanStack Query 5",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/05-state-management/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -258,7 +273,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         },
@@ -268,7 +283,8 @@
           "title": "Rendering Strategies",
           "tech": "Next.js 16, React 19.2",
           "status": "not started",
-          "docs": 0,
+          "docs": 7,
+          "cheatsheet": "modules/02-frontend/06-rendering/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -276,7 +292,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -286,7 +302,8 @@
           "title": "Performance",
           "tech": "React 19.2, Next.js 16, Vite 8, Lighthouse",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/07-performance/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -294,7 +311,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -304,7 +321,8 @@
           "title": "Accessibility",
           "tech": "HTML, React 19.2, axe-core, Playwright",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/08-accessibility/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -312,7 +330,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -322,7 +340,8 @@
           "title": "UX States & Error Handling",
           "tech": "React 19.2, TanStack Query 5, Tailwind CSS 4",
           "status": "not started",
-          "docs": 0,
+          "docs": 5,
+          "cheatsheet": "modules/02-frontend/09-ux-states/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -330,7 +349,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 10,
             "done": 0
           }
         },
@@ -340,7 +359,8 @@
           "title": "Forms & Validation",
           "tech": "React Hook Form 7, Zod 4, React 19.2",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/10-forms/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -348,7 +368,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         },
@@ -358,7 +378,8 @@
           "title": "Frontend Security",
           "tech": "React 19.2, Next.js 16, CSP",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/11-security/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -366,7 +387,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         },
@@ -376,7 +397,8 @@
           "title": "Cross-Cutting Frontend",
           "tech": "React 19.2, TypeScript, Tailwind CSS 4",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/12-cross-cutting/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -384,7 +406,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         },
@@ -394,7 +416,8 @@
           "title": "Frontend Testing & Monitoring",
           "tech": "Vitest 4, Testing Library, MSW, Playwright, Sentry",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/13-testing-monitoring/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -402,7 +425,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         }
@@ -411,6 +434,7 @@
     {
       "slug": "03-backend",
       "title": "Backend",
+      "cheatsheet": "modules/03-backend/cheatsheet.md",
       "percent": 0,
       "topicsDone": 0,
       "topics": [
@@ -420,7 +444,8 @@
           "title": "Language & Runtime",
           "tech": "Node.js 26, TypeScript 6 (strict)",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/01-language-runtime/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -428,7 +453,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -438,7 +463,8 @@
           "title": "API Design",
           "tech": "Express 5, Zod 4, OpenAPI 3.1",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/02-api-design/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -446,7 +472,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 13,
             "done": 0
           }
         },
@@ -456,7 +482,8 @@
           "title": "Databases",
           "tech": "PostgreSQL 18, pg, Drizzle ORM, MongoDB 8, Mongoose",
           "status": "not started",
-          "docs": 0,
+          "docs": 7,
+          "cheatsheet": "modules/03-backend/03-databases/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -464,7 +491,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 14,
             "done": 0
           }
         },
@@ -474,7 +501,8 @@
           "title": "Authentication & Authorization",
           "tech": "Express 5, Redis 8, argon2, Better Auth",
           "status": "not started",
-          "docs": 0,
+          "docs": 7,
+          "cheatsheet": "modules/03-backend/04-auth/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -482,7 +510,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 13,
             "done": 0
           }
         },
@@ -492,7 +520,8 @@
           "title": "Validation & Abuse Protection",
           "tech": "Zod 4, express-rate-limit, Redis 8",
           "status": "not started",
-          "docs": 0,
+          "docs": 5,
+          "cheatsheet": "modules/03-backend/05-validation-abuse/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -500,7 +529,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         },
@@ -510,7 +539,8 @@
           "title": "Caching",
           "tech": "Redis 8",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/06-caching/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -518,7 +548,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 11,
             "done": 0
           }
         },
@@ -528,7 +558,8 @@
           "title": "Background Jobs & Messaging",
           "tech": "BullMQ, Redis 8",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/07-background-jobs/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -536,7 +567,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -546,7 +577,8 @@
           "title": "Reliability & Resilience",
           "tech": "Node.js 26, Express 5, BullMQ",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/08-reliability/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -554,7 +586,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -564,7 +596,8 @@
           "title": "Scalability & Performance",
           "tech": "Node.js 26, PostgreSQL 18, Redis 8, k6",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/09-scalability/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -572,7 +605,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -582,7 +615,8 @@
           "title": "Observability",
           "tech": "Pino, OpenTelemetry, Grafana LGTM, Sentry",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/10-observability/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -590,7 +624,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -600,7 +634,8 @@
           "title": "Architecture",
           "tech": "Node.js 26, Express 5, TypeScript",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/11-architecture/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -608,7 +643,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -618,7 +653,8 @@
           "title": "Common Integrations",
           "tech": "Stripe, AWS SES, AWS S3, BullMQ",
           "status": "not started",
-          "docs": 0,
+          "docs": 7,
+          "cheatsheet": "modules/03-backend/12-integrations/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -626,7 +662,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         }
@@ -635,6 +671,7 @@
     {
       "slug": "04-shipping",
       "title": "Shipping",
+      "cheatsheet": "modules/04-shipping/cheatsheet.md",
       "percent": 0,
       "topicsDone": 0,
       "topics": [
@@ -644,7 +681,8 @@
           "title": "Containers",
           "tech": "Docker, Docker Compose",
           "status": "not started",
-          "docs": 0,
+          "docs": 5,
+          "cheatsheet": "modules/04-shipping/01-containers/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -652,7 +690,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 10,
             "done": 0
           }
         },
@@ -662,7 +700,8 @@
           "title": "Cloud",
           "tech": "AWS (ECS Fargate, RDS, ElastiCache, S3), MongoDB Atlas",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/04-shipping/02-cloud/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -670,7 +709,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -680,7 +719,8 @@
           "title": "Infrastructure as Code",
           "tech": "Terraform",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/04-shipping/03-iac/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -688,7 +728,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -698,7 +738,8 @@
           "title": "Deployments",
           "tech": "GitHub Actions, Docker, AWS ECS",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/04-shipping/04-deployments/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -706,7 +747,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -716,7 +757,8 @@
           "title": "Data Safety",
           "tech": "PostgreSQL 18, AWS RDS backups, Drizzle Kit migrations, MongoDB Atlas backups",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/04-shipping/05-data-safety/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -724,7 +766,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         },
@@ -734,7 +776,8 @@
           "title": "Incident Response",
           "tech": "Sentry, Grafana, OpenTelemetry",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/04-shipping/06-incident-response/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -742,7 +785,7 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         }
@@ -751,6 +794,7 @@
     {
       "slug": "05-practice",
       "title": "Practice",
+      "cheatsheet": "modules/05-practice/cheatsheet.md",
       "percent": 0,
       "topicsDone": 0,
       "topics": [
@@ -760,7 +804,8 @@
           "title": "Engineering Practice",
           "tech": "Git, GitHub",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/05-practice/01-engineering-practice/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -768,25 +813,27 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
-            "total": 0,
+            "total": 12,
             "done": 0
           }
         }
       ]
     },
     {
-      "slug": "06-capstone",
-      "title": "Capstone",
+      "slug": "06-design",
+      "title": "Software Design & Architecture",
+      "cheatsheet": "modules/06-design/cheatsheet.md",
       "percent": 0,
       "topicsDone": 0,
       "topics": [
         {
-          "slug": "01-pre-launch",
-          "path": "modules/06-capstone/01-pre-launch",
-          "title": "Pre-Launch Checklist",
-          "tech": "Next.js 16, Express 5, PostgreSQL 18, Redis 8, AWS, Terraform",
+          "slug": "01-paradigms-oop",
+          "path": "modules/06-design/01-paradigms-oop",
+          "title": "Paradigms & OOP",
+          "tech": "TypeScript 6 (strict)",
           "status": "not started",
-          "docs": 0,
+          "docs": 6,
+          "cheatsheet": "modules/06-design/01-paradigms-oop/docs/cheatsheet.md",
           "tasks": {
             "total": 0,
             "done": 0
@@ -794,7 +841,168 @@
           "reviewed": 0,
           "score": null,
           "checklist": {
+            "total": 10,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-principles",
+          "path": "modules/06-design/02-principles",
+          "title": "Design Principles & SOLID",
+          "tech": "TypeScript 6 (strict)",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/02-principles/docs/cheatsheet.md",
+          "tasks": {
             "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 11,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-design-patterns",
+          "path": "modules/06-design/03-design-patterns",
+          "title": "Design Patterns",
+          "tech": "TypeScript 6 (strict), Node.js 26",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/03-design-patterns/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-architecture-styles",
+          "path": "modules/06-design/04-architecture-styles",
+          "title": "Architecture Styles",
+          "tech": "TypeScript, Express 5, Next.js 16, React 19.2",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/04-architecture-styles/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-domain-driven-design",
+          "path": "modules/06-design/05-domain-driven-design",
+          "title": "Domain-Driven Design",
+          "tech": "TypeScript, Node.js 26, Drizzle ORM, PostgreSQL 18",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/05-domain-driven-design/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-system-design",
+          "path": "modules/06-design/06-system-design",
+          "title": "System Design",
+          "tech": "PostgreSQL 18, Redis 8, BullMQ, AWS",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/06-system-design/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "07-distributed-systems",
+          "path": "modules/06-design/07-distributed-systems",
+          "title": "Distributed Systems",
+          "tech": "PostgreSQL 18, Redis 8, BullMQ",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/07-distributed-systems/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 11,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "07-capstone",
+      "title": "Capstone",
+      "cheatsheet": "modules/07-capstone/cheatsheet.md",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-design-build",
+          "path": "modules/07-capstone/01-design-build",
+          "title": "Design & Build",
+          "tech": "Next.js 16, Express 5, TypeScript, PostgreSQL 18, Drizzle ORM, Redis 8, BullMQ",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/07-capstone/01-design-build/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-pre-launch",
+          "path": "modules/07-capstone/02-pre-launch",
+          "title": "Pre-Launch Checklist",
+          "tech": "Next.js 16, Express 5, PostgreSQL 18, Redis 8, AWS, Terraform",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/07-capstone/02-pre-launch/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
             "done": 0
           }
         }

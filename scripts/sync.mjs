@@ -92,12 +92,14 @@ const blank = (v) => v === undefined || v === null || v === '' || v === DASH;
 
 // ---------- model ----------
 
-function topicStatus(docs, tasks) {
+// Lessons can be written ahead of time (/learn all mode=docs), so a topic
+// counts as started only once it has tasks.
+function topicStatus(tasks) {
   const core = tasks.filter((t) => t.level !== 'stretch');
   if (core.length && core.every((t) => t.verdict === 'pass')) return 'done';
   if (core.length && core.every((t) => t.status === 'done')) return 'reviewing';
   if (core.some((t) => t.status === 'done')) return 'building';
-  if (docs > 0) return 'learning';
+  if (tasks.length > 0) return 'learning';
   return 'not started';
 }
 
@@ -133,8 +135,9 @@ function loadTopic(moduleSlug, slug, scores) {
     path,
     title: fm.title || slug,
     tech: blank(fm.tech) ? null : fm.tech,
-    status: topicStatus(docs, tasks),
+    status: topicStatus(tasks),
     docs,
+    cheatsheet: existsSync(join(dir, 'docs', 'cheatsheet.md')) ? `${path}/docs/cheatsheet.md` : null,
     tasks: { total: tasks.length, done: tasks.filter((t) => t.status === 'done').length },
     reviewed: tasks.filter((t) => t.reviewed).length,
     score: mean(taskScores),
@@ -154,6 +157,7 @@ function loadModule(slug, scores) {
   return {
     slug,
     title,
+    cheatsheet: existsSync(join(dir, 'cheatsheet.md')) ? `modules/${slug}/cheatsheet.md` : null,
     percent: percent(done, total),
     topicsDone: topics.filter((t) => t.status === 'done').length,
     topics,
@@ -170,6 +174,7 @@ function bar(pct) {
 const show = (v) => (blank(v) ? DASH : String(v).replace(/\|/g, '\\|'));
 const showScore = (s) => (s === null ? DASH : s.toFixed(1));
 const showTasks = ({ total, done }) => (total ? `${done}/${total}` : DASH);
+const showSheet = (path) => (path ? `[sheet](${path})` : DASH);
 
 function renderStats(totals, date) {
   const t = totals;
@@ -195,14 +200,15 @@ function renderModules(modules) {
         ? m.topics.some((t) => IN_PROGRESS.includes(t.status))
         : m.slug.startsWith('01-');
       const rows = m.topics.map((t) =>
-        `| ${GLYPH[t.status]} | [${show(t.title)}](${t.path}) | ${show(t.tech)} | ${showTasks(t.tasks)} | ${showScore(t.score)} |`);
+        `| ${GLYPH[t.status]} | [${show(t.title)}](${t.path}) | ${show(t.tech)} | ${showSheet(t.cheatsheet)} | ${showTasks(t.tasks)} | ${showScore(t.score)} |`);
       return [
         open ? '<details open>' : '<details>',
         `<summary><b>${m.slug.slice(0, 2)} · ${m.title}</b>&nbsp; <code>${bar(m.percent)}</code> ${m.percent}% · ${m.topicsDone}/${m.topics.length} topics</summary>`,
         '<br>',
         '',
-        '| | Topic | Tech | Tasks | Score |',
-        '|:-:|:--|:--|:-:|:-:|',
+        ...(m.cheatsheet ? [`Module cheatsheet: [${m.title}](${m.cheatsheet})`, ''] : []),
+        '| | Topic | Tech | Cheatsheet | Tasks | Score |',
+        '|:-:|:--|:--|:-:|:-:|:-:|',
         ...rows,
         '',
         '</details>',
