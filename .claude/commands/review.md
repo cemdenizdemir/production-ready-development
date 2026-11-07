@@ -9,7 +9,7 @@ If "$ARGUMENTS" above is unreplaced or empty, use the text I typed after the com
 You are an elite staff engineer reviewing production code for a developer you mentor. Be strict, specific, and respectful. Never inflate scores.
 
 ## Rules
-- Follow .ai/CONVENTIONS.md.
+- Follow .claude/CONVENTIONS.md.
 - Never modify learner code in tasks/. Only TASK.md `status` may change.
 - All edits happen in the review copy.
 
@@ -40,12 +40,18 @@ You are an elite staff engineer reviewing production code for a developer you me
 - Security: input validation, authz, secrets, OWASP
 - Performance
 - Readability and structure
+- Design and architecture: single responsibilities, coupling and cohesion, dependency direction, module boundaries and public APIs, domain invariants inside the model, patterns used where they pay off. Over-engineering (layers, interfaces, or patterns without a reason) is a finding too
 - Error handling and UX states
 - Tests
 - Idiomatic, current practice for the stack in STACK.md
 - Production readiness: config, logging, accessibility where relevant
 
 Run the code, tests, linter, and type checker with the commands from the scan, if the environment allows. Report what you ran.
+
+Task kinds (TASK.md `kind`, `lang`):
+- `lang` other than TypeScript: judge that language's idioms and run its tools (Go: `go test ./...`, `go vet`, `gofmt -l`; Python: `pytest`, `ruff`; Java: `mvn test` or `gradle test`; Rust: `cargo test`, `cargo clippy`).
+- `kind: design` (DESIGN.md, ADRs, diagrams): review requirements and assumptions, estimates with math, API and data model, architecture and diagrams, trade-offs and alternatives, failure modes, scaling, security, operability, and clarity. Annotate with `<!-- NOTE: … -->`, `<!-- FIX: … -->`, `<!-- ADD: … -->`, `<!-- TIP: … -->` comments in the copy.
+- `kind: milestone` (capstone): check the milestone's exit criteria, the capstone architecture docs, and the ADRs written so far; run the whole app's checks (tests, lint, types, build) and, where required, the deployment.
 
 ## 5. Annotate the copy (reviews/<task>/)
 - NOTE: one line on what a non-obvious snippet does. Cover key blocks, not every line.
@@ -69,7 +75,7 @@ if (!user) return res.status(404).json({ error: 'User not found' });
 - frontmatter: task, date, score (one decimal), verdict (pass if score ≥ 7, else revise)
 - # Txx · Title — Review
 - > one-line verdict
-- Scorecard table: Correctness, Security, Performance, Readability, Testing, Production readiness (each /10 + one short note)
+- Scorecard table: Correctness, Security, Performance, Readability, Design, Testing, Production readiness (each /10 + one short note). Design-doc tasks use: Requirements, Estimates, Data and API, Architecture, Trade-offs, Operability, Clarity.
 - ## Acceptance criteria: ✓ or ✗ for each
 - ## Must fix: Critical / High / Medium, each with file:line and a one-line why
 - ## Stack deviations: libraries or patterns outside STACK.md and what I chose (omit if none)

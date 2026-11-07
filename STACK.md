@@ -1,6 +1,6 @@
 # Stack
 Decided stack for this repo. The learn and review prompts read this file.
-Updated: 2026-11-01
+Updated: 2026-11-07
 
 ## Goal
 - Target: learn the most; keep job, freelance, startup, and personal options open; no single market
@@ -34,6 +34,7 @@ Updated: 2026-11-01
 | API docs | OpenAPI 3.1 generated from Zod, Scalar UI | docs from the same schemas | tentative |
 | Load testing | k6 | scriptable in JS, fits Grafana | tentative |
 | Integrations | Stripe (test mode), AWS SES | payments and email, both job staples | tentative |
+| Comparison languages | Go, Java, Python, Rust (reading-level examples) | design ideas across languages via lang=; TypeScript stays the build language | tentative |
 
 Status is one of: decided, tentative, undecided.
 
@@ -81,7 +82,15 @@ Exact string the learn prompt uses as TECH for each topic.
 | modules/04-shipping/05-data-safety | PostgreSQL 18, AWS RDS backups, Drizzle Kit migrations, MongoDB Atlas backups |
 | modules/04-shipping/06-incident-response | Sentry, Grafana, OpenTelemetry |
 | modules/05-practice/01-engineering-practice | Git, GitHub |
-| modules/06-capstone/01-pre-launch | Next.js 16, Express 5, PostgreSQL 18, Redis 8, AWS, Terraform |
+| modules/06-design/01-paradigms-oop | TypeScript 6 (strict) |
+| modules/06-design/02-principles | TypeScript 6 (strict) |
+| modules/06-design/03-design-patterns | TypeScript 6 (strict), Node.js 26 |
+| modules/06-design/04-architecture-styles | TypeScript, Express 5, Next.js 16, React 19.2 |
+| modules/06-design/05-domain-driven-design | TypeScript, Node.js 26, Drizzle ORM, PostgreSQL 18 |
+| modules/06-design/06-system-design | PostgreSQL 18, Redis 8, BullMQ, AWS |
+| modules/06-design/07-distributed-systems | PostgreSQL 18, Redis 8, BullMQ |
+| modules/07-capstone/01-design-build | Next.js 16, Express 5, TypeScript, PostgreSQL 18, Drizzle ORM, Redis 8, BullMQ |
+| modules/07-capstone/02-pre-launch | Next.js 16, Express 5, PostgreSQL 18, Redis 8, AWS, Terraform |
 
 ## Learn order
 1. 01-foundations, starting with 06-security; do 02-http-networking first if cookies or CORS feel shaky.
@@ -91,7 +100,8 @@ Exact string the learn prompt uses as TECH for each topic.
 5. 03-backend/06–12: caching, jobs, reliability, scalability, observability, architecture, integrations.
 6. 02-frontend/06–09 and 11–13: Next.js rendering, performance, accessibility, security, testing.
 7. 04-shipping/02–06: AWS, Terraform, deployments, data safety, incident response.
-8. 05-practice runs alongside every module; 06-capstone comes last.
+8. 06-design runs alongside: 01–03 after 01-foundations; 04–05 before 03-backend/11-architecture; 06–07 after 03-backend/09-scalability.
+9. 05-practice runs alongside every module; 07-capstone comes last: 01-design-build, then 02-pre-launch.
 
 ## Decision log
 - 2026-11-01 · Language · TypeScript 6.0.x (strict), Node.js 26 LTS · fixed by me; pin TS 6 until typescript-eslint supports TS 7
@@ -117,3 +127,6 @@ Exact string the learn prompt uses as TECH for each topic.
 - 2026-11-01 · API docs · OpenAPI 3.1 from Zod, Scalar · tentative; fills 08-documentation gap
 - 2026-11-01 · Load testing · k6 · tentative; fills 09-scalability gap
 - 2026-11-01 · Integrations · Stripe (test mode), AWS SES · tentative; fills 12-integrations gap
+- 2026-11-07 · Comparison languages · Go, Java, Python, Rust (reading-level) · tentative; requested by me for 06-design/09 and lang= examples
+- 2026-11-07 · Topic → TECH · added 06-design (9 topics); capstone moved to 07-capstone (01-design-build, 02-pre-launch) · requested by me
+- 2026-11-07 · Topic → TECH · removed 06-design/08-data-structures-algorithms and 06-design/09-languages-concurrency; comparison languages kept for lang= only · requested by me
