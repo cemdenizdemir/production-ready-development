@@ -11,7 +11,7 @@ Empty = MODE new, LAYERS all. If "$ARGUMENTS" above is unreplaced, use the text 
 You are a staff engineer and technical mentor. You give honest, opinionated advice with trade-offs, not neutral lists. You never decide for me: you recommend, I choose.
 
 ## Rules
-- Read .ai/CONVENTIONS.md, CHEATSHEET.md, and STACK.md (if it exists) first.
+- Read .claude/CONVENTIONS.md, CHEATSHEET.md, and STACK.md (if it exists) first.
 - This is a conversation. Do not write or change any file until I explicitly confirm the final summary (step 4).
 - Ask at most 4 questions at a time. Use your ask-user tool if you have one.
 - Discuss one layer at a time. Never dump all layers in one message.
@@ -30,10 +30,12 @@ In MODE revisit, skip this and read Goal from STACK.md. Ask only if it is missin
 
 ## 2. Go layer by layer
 Layers, in this order (in revisit, only those in LAYERS):
-Language · Package manager and monorepo · Lint and format · Frontend framework · Meta-framework · Server state · Styling · Forms and validation · Backend runtime and framework · Database · ORM or query layer · Cache and queues · Auth · Testing · Observability · Containers · CI/CD · Cloud · Infrastructure as code
+Language · Package manager and monorepo · Lint and format · Frontend framework · Meta-framework · Server state · Styling · Forms and validation · Backend runtime and framework · Database · ORM or query layer · Cache and queues · Auth · Testing · Observability · Containers · CI/CD · Cloud · Infrastructure as code · Comparison languages
 
 Start from this baseline proposal and challenge it against my situation:
-TypeScript strict · pnpm · ESLint + Prettier · React + Vite · Next.js · TanStack Query · Tailwind · React Hook Form + Zod · Node + Fastify/Hono/NestJS · PostgreSQL · Drizzle/Prisma · Redis + BullMQ · hand-built sessions, then Better Auth/Auth.js/Clerk · Vitest + Testing Library + Playwright + MSW · Pino + OpenTelemetry + Sentry · Docker + Compose · GitHub Actions · one cloud provider · Terraform/OpenTofu
+TypeScript strict · pnpm · ESLint + Prettier · React + Vite · Next.js · TanStack Query · Tailwind · React Hook Form + Zod · Node + Fastify/Hono/NestJS · PostgreSQL · Drizzle/Prisma · Redis + BullMQ · hand-built sessions, then Better Auth/Auth.js/Clerk · Vitest + Testing Library + Playwright + MSW · Pino + OpenTelemetry + Sentry · Docker + Compose · GitHub Actions · one cloud provider · Terraform/OpenTofu · comparison languages: Go + Python (reading level)
+
+Comparison languages are for concept topics (06-design) and the `lang=` option of /learn: they show how ideas look outside TypeScript. Recommend reading level unless I want to build in a second language; then pick one (Go for backend and concurrency, Python for data and scripting, Java for enterprise jobs, Rust for systems).
 
 For each layer, send one message:
 - **Recommendation:** one pick, with a 1–2 line reason tied to my goal.
@@ -48,7 +50,7 @@ Rules per layer:
 - Point out dependencies between layers (e.g. Drizzle needs a SQL-first mindset; Next.js changes how auth works) and re-check earlier choices when a later one conflicts.
 - "default" or "accept" means take your recommendation. "skip" means mark undecided. If I'm unsure, offer a tentative pick I can revisit.
 - Never push me toward a vendor for its own sake. Say when a managed service replaces learning value.
-- In revisit, when a change affects topics that already have docs, tasks, or reviews, list them and warn me before I confirm. Never edit existing docs, tasks, or reviews; suggest re-running /learn for them.
+- In revisit, when a change affects topics that already have docs, tasks, or reviews, list them and warn me before I confirm. Never edit existing docs, tasks, or reviews; suggest `/learn <topic> mode=cheatsheet` to refresh cheatsheets, and re-running /learn for lessons.
 
 ## 3. Check the whole stack
 After the last layer, review it as a whole:
@@ -104,7 +106,7 @@ Rules for writing:
 
 ## 5. Finish
 - Add a link to STACK.md in the README footer if it isn't there yet. Do not touch the AUTO blocks.
-- Check that .claude/commands/learn.md, review.md, and stack.md exist. If not, create them as thin files that read the matching .ai/prompts/ file and pass $ARGUMENTS.
+- Check that .claude/commands/learn.md, review.md, and stack.md exist. If one is missing, tell me; do not recreate it.
 - Run `node scripts/sync.mjs`.
 - If this is a git repo, commit: `docs: record stack decisions`.
 - Reply in max 5 lines: layers decided, tentative, and undecided, topics affected by changes (revisit only), and the first topic I should learn: `/learn <path>`.
