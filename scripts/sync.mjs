@@ -1,12 +1,15 @@
-// Rebuilds progress.json and the AUTO blocks in README.md from modules/.
+// Rebuilds every stack's progress.json and README AUTO blocks from stacks/<stack>/modules/,
+// and the stacks table in the root README.
 // Node >= 18, no dependencies, idempotent. Usage: node scripts/sync.mjs
 import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const STACKS = join(ROOT, 'stacks');
 const DASH = '—';
 const NUMBERED = /^\d{2}-/;
+const STACK_NAME = /^[a-z0-9][a-z0-9-]*$/;
 const GLYPH = {
   'not started': '○',
   learning: '◔',
@@ -103,9 +106,10 @@ function topicStatus(tasks) {
   return 'not started';
 }
 
-function loadTopic(moduleSlug, slug, scores) {
+// Paths in the model are relative to the stack folder, like the links in its README.
+function loadTopic(stackDir, moduleSlug, slug, scores) {
   const path = `modules/${moduleSlug}/${slug}`;
-  const dir = join(ROOT, path);
+  const dir = join(stackDir, path);
   const text = read(join(dir, 'README.md'));
   const fm = frontmatter(text);
   const docs = files(join(dir, 'docs')).filter((f) => f.endsWith('.md')).length;
@@ -145,13 +149,13 @@ function loadTopic(moduleSlug, slug, scores) {
   };
 }
 
-function loadModule(slug, scores) {
-  const dir = join(ROOT, 'modules', slug);
+function loadModule(stackDir, slug, scores) {
+  const dir = join(stackDir, 'modules', slug);
   const readme = join(dir, 'README.md');
   const title = (existsSync(readme) && frontmatter(read(readme)).title) || slug;
   const topics = subdirs(dir, NUMBERED)
     .filter((t) => existsSync(join(dir, t, 'README.md')))
-    .map((t) => loadTopic(slug, t, scores));
+    .map((t) => loadTopic(stackDir, slug, t, scores));
   const total = topics.reduce((n, t) => n + t.checklist.total, 0);
   const done = topics.reduce((n, t) => n + t.checklist.done, 0);
   return {
@@ -161,6 +165,36 @@ function loadModule(slug, scores) {
     percent: percent(done, total),
     topicsDone: topics.filter((t) => t.status === 'done').length,
     topics,
+  };
+}
+
+function loadStack(slug) {
+  const dir = join(STACKS, slug);
+  const readme = join(dir, 'README.md');
+  const fm = existsSync(readme) ? frontmatter(read(readme)) : {};
+  const scores = [];
+  const modules = subdirs(join(dir, 'modules'), NUMBERED).map((m) => loadModule(dir, m, scores));
+  const topics = modules.flatMap((m) => m.topics);
+  const checkTotal = topics.reduce((n, t) => n + t.checklist.total, 0);
+  const checkDone = topics.reduce((n, t) => n + t.checklist.done, 0);
+  return {
+    slug,
+    dir,
+    readme,
+    title: fm.title || slug,
+    summary: blank(fm.summary) ? null : fm.summary,
+    hasStack: existsSync(join(dir, 'STACK.md')),
+    hasCheatsheet: existsSync(join(dir, 'CHEATSHEET.md')),
+    totals: {
+      topics: topics.length,
+      topicsDone: topics.filter((t) => t.status === 'done').length,
+      tasks: topics.reduce((n, t) => n + t.tasks.total, 0),
+      tasksDone: topics.reduce((n, t) => n + t.tasks.done, 0),
+      reviewed: topics.reduce((n, t) => n + t.reviewed, 0),
+      avgScore: mean(scores),
+      checklist: { total: checkTotal, done: checkDone, percent: percent(checkDone, checkTotal) },
+    },
+    modules,
   };
 }
 
@@ -193,6 +227,7 @@ function renderStats(totals, date) {
 }
 
 function renderModules(modules) {
+  if (!modules.length) return '_No modules yet. Run `/stack new <name>` to create the topic checklists._';
   const started = modules.some((m) => m.topics.some((t) => t.status !== 'not started'));
   return modules
     .map((m) => {
@@ -217,13 +252,42 @@ function renderModules(modules) {
     .join('\n\n');
 }
 
-function replaceBlock(text, name, body) {
+function renderStacks(stacks) {
+  if (!stacks.length) return '_No stacks yet. Run `/stack new <name>` to create the first one._';
+  const rows = stacks.map((s) => {
+    const base = `stacks/${s.slug}`;
+    const t = s.totals;
+    const links = [
+      s.hasStack && `[STACK](${base}/STACK.md)`,
+      s.hasCheatsheet && `[CHEATSHEET](${base}/CHEATSHEET.md)`,
+    ].filter(Boolean).join(' · ') || DASH;
+    const home = existsSync(s.readme) ? `${base}/README.md` : base;
+    return `| [${show(s.title)}](${home}) | ${show(s.summary)} | <code>${bar(t.checklist.percent)}</code> ${t.checklist.percent}% | ${t.topicsDone}/${t.topics} | ${showTasks({ total: t.tasks, done: t.tasksDone })} | ${showScore(t.avgScore)} | ${links} |`;
+  });
+  return [
+    '| Stack | Tools | Mastery | Topics | Tasks | Score | Files |',
+    '|:--|:--|:--|:-:|:-:|:-:|:--|',
+    ...rows,
+  ].join('\n');
+}
+
+function replaceBlock(text, name, body, file) {
   const start = `<!-- AUTO:${name} -->`;
   const end = `<!-- /AUTO:${name} -->`;
   const i = text.indexOf(start);
   const j = text.indexOf(end);
-  if (i < 0 || j < i) throw new Error(`README.md is missing ${start} ... ${end}`);
+  if (i < 0 || j < i) throw new Error(`${file} is missing ${start} ... ${end}`);
   return `${text.slice(0, i + start.length)}\n${body}\n${text.slice(j)}`;
+}
+
+// Keeps the file's line endings.
+function updateReadme(path, blocks) {
+  const raw = readFileSync(path, 'utf8');
+  const crlf = raw.includes('\r\n');
+  let text = raw.replace(/\r\n/g, '\n');
+  const file = path.slice(ROOT.length + 1).replace(/\\/g, '/');
+  for (const [name, body] of Object.entries(blocks)) text = replaceBlock(text, name, body, file);
+  write(path, crlf ? text.replace(/\n/g, '\r\n') : text);
 }
 
 // ---------- main ----------
@@ -235,35 +299,26 @@ function today() {
 }
 
 const date = today();
-const scores = [];
-const modules = subdirs(join(ROOT, 'modules'), NUMBERED).map((m) => loadModule(m, scores));
-const topics = modules.flatMap((m) => m.topics);
-const checkTotal = topics.reduce((n, t) => n + t.checklist.total, 0);
-const checkDone = topics.reduce((n, t) => n + t.checklist.done, 0);
+const stacks = subdirs(STACKS, STACK_NAME).map(loadStack);
 
-const totals = {
-  topics: topics.length,
-  topicsDone: topics.filter((t) => t.status === 'done').length,
-  tasks: topics.reduce((n, t) => n + t.tasks.total, 0),
-  tasksDone: topics.reduce((n, t) => n + t.tasks.done, 0),
-  reviewed: topics.reduce((n, t) => n + t.reviewed, 0),
-  avgScore: mean(scores),
-  checklist: { total: checkTotal, done: checkDone, percent: percent(checkDone, checkTotal) },
-};
+for (const s of stacks) {
+  write(
+    join(s.dir, 'progress.json'),
+    `${JSON.stringify({ stack: s.slug, generatedAt: date, totals: s.totals, modules: s.modules }, null, 2)}\n`,
+  );
+  if (existsSync(s.readme)) {
+    updateReadme(s.readme, {
+      STATS: renderStats(s.totals, date),
+      MODULES: renderModules(s.modules),
+    });
+  } else {
+    console.warn(`warning: stacks/${s.slug}/README.md is missing; dashboard not written`);
+  }
+  const t = s.totals;
+  console.log(
+    `synced ${s.slug} · ${t.checklist.percent}% · ${t.topicsDone}/${t.topics} topics · ${t.tasksDone}/${t.tasks} tasks`,
+  );
+}
 
-write(
-  join(ROOT, 'progress.json'),
-  `${JSON.stringify({ generatedAt: date, totals, modules }, null, 2)}\n`,
-);
-
-const readmePath = join(ROOT, 'README.md');
-const raw = readFileSync(readmePath, 'utf8');
-const crlf = raw.includes('\r\n');
-let readme = raw.replace(/\r\n/g, '\n');
-readme = replaceBlock(readme, 'STATS', renderStats(totals, date));
-readme = replaceBlock(readme, 'MODULES', renderModules(modules));
-write(readmePath, crlf ? readme.replace(/\n/g, '\r\n') : readme);
-
-console.log(
-  `synced · ${totals.checklist.percent}% · ${totals.topicsDone}/${totals.topics} topics · ${totals.tasksDone}/${totals.tasks} tasks`,
-);
+updateReadme(join(ROOT, 'README.md'), { STACKS: renderStacks(stacks) });
+console.log(`synced README · ${stacks.length} stack${stacks.length === 1 ? '' : 's'}`);
