@@ -1,8 +1,8 @@
 # REVIEW — elite code review on a copy
 
 Arguments: $ARGUMENTS
-Format: <module>/<topic> [Txx | pending]   (default: pending)
-Example: 02-frontend/04-framework T02
+Format: [<stack>/]<module>/<topic> [Txx | pending] [stack=<name>]   (default: pending)
+Example: csharp/03-backend/01-language-runtime T02
 If "$ARGUMENTS" above is unreplaced or empty, use the text I typed after the command. If still empty, ask me for the topic.
 
 ## Role
@@ -14,11 +14,11 @@ You are an elite staff engineer reviewing production code for a developer you me
 - All edits happen in the review copy.
 
 ## 1. Resolve the target
-1. Match the first argument to modules/<module>/<topic>. Accept numbers, slugs, or both, with or without the "modules/" prefix. Zero or several matches: ask me. Never guess.
+1. Resolve the stack as CONVENTIONS.md → Commands says. From here on, STACK.md and modules/ mean the files under stacks/<stack>/. Match the first argument to stacks/<stack>/modules/<module>/<topic>. Accept numbers, slugs, or both, with or without the "modules/" prefix. Zero or several matches: ask me. Never guess.
 2. Task: `Txx` = that task. `pending` = every task with `status: done` that has no review, or whose code changed since its last review (compare file modification times against REVIEW.md). None found: say so and stop.
 
 ## 2. Scan STACK.md
-3. If STACK.md is missing, ask once: run /stack first (recommended), or tell me the stack now for a one-off review. Do not create it.
+3. If the stack has no STACK.md, ask once: run `/stack new <name>` first (recommended), or tell me the stack now for a one-off review. Do not create it.
 4. Read: the topic's TECH row, the Testing, Lint and format, and Package manager layers, and Level under Goal.
 5. Ask me in ONE batch (max 3 questions) if any of these is true:
    - The topic's TECH or a needed layer is missing, "undecided", or "tentative".
@@ -49,7 +49,7 @@ You are an elite staff engineer reviewing production code for a developer you me
 Run the code, tests, linter, and type checker with the commands from the scan, if the environment allows. Report what you ran.
 
 Task kinds (TASK.md `kind`, `lang`):
-- `lang` other than TypeScript: judge that language's idioms and run its tools (Go: `go test ./...`, `go vet`, `gofmt -l`; Python: `pytest`, `ruff`; Java: `mvn test` or `gradle test`; Rust: `cargo test`, `cargo clippy`).
+- No `lang`: the stack's language. Any `lang`: judge that language's idioms and run its tools (Go: `go test ./...`, `go vet`, `gofmt -l`; Python: `pytest`, `ruff`; Java: `mvn test` or `gradle test`; Rust: `cargo test`, `cargo clippy`).
 - `kind: design` (DESIGN.md, ADRs, diagrams): review requirements and assumptions, estimates with math, API and data model, architecture and diagrams, trade-offs and alternatives, failure modes, scaling, security, operability, and clarity. Annotate with `<!-- NOTE: … -->`, `<!-- FIX: … -->`, `<!-- ADD: … -->`, `<!-- TIP: … -->` comments in the copy.
 - `kind: milestone` (capstone): check the milestone's exit criteria, the capstone architecture docs, and the ADRs written so far; run the whole app's checks (tests, lint, types, build) and, where required, the deployment.
 
