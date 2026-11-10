@@ -208,7 +208,7 @@ function bar(pct) {
 const show = (v) => (blank(v) ? DASH : String(v).replace(/\|/g, '\\|'));
 const showScore = (s) => (s === null ? DASH : s.toFixed(1));
 const showTasks = ({ total, done }) => (total ? `${done}/${total}` : DASH);
-const showSheet = (path) => (path ? `[sheet](${path})` : DASH);
+const showSheet = (path, prefix = '') => (path ? `[sheet](${prefix}${path})` : DASH);
 
 function renderStats(totals, date) {
   const t = totals;
@@ -226,7 +226,7 @@ function renderStats(totals, date) {
   ].join('\n');
 }
 
-function renderModules(modules) {
+function renderModules(modules, prefix = '') {
   if (!modules.length) return '_No modules yet. Run `/stack new <name>` to create the topic checklists._';
   const started = modules.some((m) => m.topics.some((t) => t.status !== 'not started'));
   return modules
@@ -235,13 +235,13 @@ function renderModules(modules) {
         ? m.topics.some((t) => IN_PROGRESS.includes(t.status))
         : m.slug.startsWith('01-');
       const rows = m.topics.map((t) =>
-        `| ${GLYPH[t.status]} | [${show(t.title)}](${t.path}) | ${show(t.tech)} | ${showSheet(t.cheatsheet)} | ${showTasks(t.tasks)} | ${showScore(t.score)} |`);
+        `| ${GLYPH[t.status]} | [${show(t.title)}](${prefix}${t.path}) | ${show(t.tech)} | ${showSheet(t.cheatsheet, prefix)} | ${showTasks(t.tasks)} | ${showScore(t.score)} |`);
       return [
         open ? '<details open>' : '<details>',
         `<summary><b>${m.slug.slice(0, 2)} · ${m.title}</b>&nbsp; <code>${bar(m.percent)}</code> ${m.percent}% · ${m.topicsDone}/${m.topics.length} topics</summary>`,
         '<br>',
         '',
-        ...(m.cheatsheet ? [`Module cheatsheet: [${m.title}](${m.cheatsheet})`, ''] : []),
+        ...(m.cheatsheet ? [`Module cheatsheet: [${m.title}](${prefix}${m.cheatsheet})`, ''] : []),
         '| | Topic | Tech | Cheatsheet | Tasks | Score |',
         '|:-:|:--|:--|:-:|:-:|:-:|',
         ...rows,
@@ -252,23 +252,40 @@ function renderModules(modules) {
     .join('\n\n');
 }
 
-function renderStacks(stacks) {
+const DEFAULT_OPEN_STACK = 'csharp';
+
+// One collapsible section per stack; the default stack starts open, the others closed.
+function renderStacks(stacks, date) {
   if (!stacks.length) return '_No stacks yet. Run `/stack new <name>` to create the first one._';
-  const rows = stacks.map((s) => {
-    const base = `stacks/${s.slug}`;
-    const t = s.totals;
-    const links = [
-      s.hasStack && `[STACK](${base}/STACK.md)`,
-      s.hasCheatsheet && `[CHEATSHEET](${base}/CHEATSHEET.md)`,
-    ].filter(Boolean).join(' · ') || DASH;
-    const home = existsSync(s.readme) ? `${base}/README.md` : base;
-    return `| [${show(s.title)}](${home}) | ${show(s.summary)} | <code>${bar(t.checklist.percent)}</code> ${t.checklist.percent}% | ${t.topicsDone}/${t.topics} | ${showTasks({ total: t.tasks, done: t.tasksDone })} | ${showScore(t.avgScore)} | ${links} |`;
-  });
-  return [
-    '| Stack | Tools | Mastery | Topics | Tasks | Score | Files |',
-    '|:--|:--|:--|:-:|:-:|:-:|:--|',
-    ...rows,
-  ].join('\n');
+  const openSlug = stacks.some((s) => s.slug === DEFAULT_OPEN_STACK) ? DEFAULT_OPEN_STACK : stacks[0].slug;
+  return stacks
+    .map((s) => {
+      const base = `stacks/${s.slug}`;
+      const t = s.totals;
+      const links = [
+        existsSync(s.readme) && `[Dashboard](${base}/README.md)`,
+        s.hasStack && `[STACK](${base}/STACK.md)`,
+        s.hasCheatsheet && `[CHEATSHEET](${base}/CHEATSHEET.md)`,
+      ].filter(Boolean).join(' &nbsp;·&nbsp; ');
+      return [
+        s.slug === openSlug ? '<details open>' : '<details>',
+        `<summary><b>${show(s.title)}</b>&nbsp; <code>${bar(t.checklist.percent)}</code> ${t.checklist.percent}% · ${t.topicsDone}/${t.topics} topics${s.summary ? ` &nbsp;·&nbsp; <sub>${s.summary}</sub>` : ''}</summary>`,
+        '<br>',
+        '',
+        '<div align="center">',
+        '',
+        renderStats(t, date),
+        '',
+        `<sub>${links}</sub>`,
+        '',
+        '</div>',
+        '',
+        renderModules(s.modules, `${base}/`),
+        '',
+        '</details>',
+      ].join('\n');
+    })
+    .join('\n\n');
 }
 
 function replaceBlock(text, name, body, file) {
@@ -320,5 +337,5 @@ for (const s of stacks) {
   );
 }
 
-updateReadme(join(ROOT, 'README.md'), { STACKS: renderStacks(stacks) });
+updateReadme(join(ROOT, 'README.md'), { STACKS: renderStacks(stacks, date) });
 console.log(`synced README · ${stacks.length} stack${stacks.length === 1 ? '' : 's'}`);
