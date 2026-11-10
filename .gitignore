@@ -9,3 +9,8 @@ __pycache__
 .env.*
 !.env.example
 .DS_Store
+bin/
+obj/
+.vs/
+*.user
+TestResults/

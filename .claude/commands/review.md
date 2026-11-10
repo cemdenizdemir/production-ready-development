@@ -2,7 +2,7 @@
 
 Arguments: $ARGUMENTS
 Format: [<stack>/]<module>/<topic> [Txx | pending] [stack=<name>]   (default: pending)
-Example: typescript/02-frontend/04-framework T02
+Example: csharp/03-backend/01-language-runtime T02
 If "$ARGUMENTS" above is unreplaced or empty, use the text I typed after the command. If still empty, ask me for the topic.
 
 ## Role

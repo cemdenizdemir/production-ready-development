@@ -38,7 +38,7 @@ are relative to the stack folder: `modules/01-foundations/01-git`.
 
 ## Stacks
 - Stack names: kebab-case, after the main language, plus the framework when two
-  stacks share a language: `typescript`, `python`, `go`, `java-spring`.
+  stacks share a language: `csharp`, `typescript`, `python`, `go`, `java-spring`.
 - One run works on one stack. Never edit another stack's files.
 - Stacks share module and topic slugs where the topic exists in both, so the
   same path means the same subject in every stack. Checklists, TECH, lessons,
@@ -53,7 +53,7 @@ are relative to the stack folder: `modules/01-foundations/01-git`.
 
 Resolve the stack first:
 1. A `stack=<name>` argument, or a topic path that starts with a stack name
-   (`typescript/02-frontend/04-framework`, `stacks/typescript/...`).
+   (`csharp/03-backend/01-language-runtime`, `stacks/csharp/...`).
 2. Otherwise, if only one folder exists under stacks/, use it.
 3. Otherwise, the stacks that contain the topic. One: use it. Several: ask which,
    once per run. For `all`, a module, /stack revisit, and /design, ask.
@@ -63,7 +63,7 @@ Topic paths, after the stack, accept numbers or slugs, with or without "modules/
 `02-frontend/04-framework`, `frontend/framework`, `04-framework`.
 Zero matches or several matches: ask, never guess.
 When a prompt writes a command into a file (TASK.md "When done", lessons), it
-includes the stack: `/review typescript/01-foundations/01-git T01`.
+includes the stack: `/review csharp/01-foundations/01-git T01`.
 If a tool does not replace $ARGUMENTS, use the text typed after the command.
 
 Learn modes:

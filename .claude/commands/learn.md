@@ -2,14 +2,14 @@
 
 Arguments: $ARGUMENTS
 Format: <target> [stack=<name>] [mode=full|docs|tasks|cheatsheet] [level=beginner|intermediate|advanced] [focus=1,3,5] [tech="override"] [lang=go|java|python|rust]
-Target: one topic (`typescript/02-frontend/04-framework`), one module (`typescript/02-frontend`), or `all` (with `stack=`). The stack prefix can be left out when only one stack exists.
+Target: one topic (`csharp/03-backend/01-language-runtime`), one module (`csharp/03-backend`), or `all` (with `stack=`). The stack prefix can be left out when only one stack exists.
 Examples:
-- `/learn typescript/02-frontend/04-framework level=beginner` — checklist, lessons, cheatsheet, and tasks for one topic
+- `/learn csharp/03-backend/01-language-runtime level=beginner` — checklist, lessons, cheatsheet, and tasks for one topic
 - `/learn python/03-backend/06-caching mode=tasks` — tasks only, built on the lessons already in docs/
 - `/learn all stack=go mode=docs` — lessons and cheatsheets for every topic of one stack, no tasks
-- `/learn typescript/04-shipping mode=cheatsheet` — rebuild the reminder cheatsheets of one module
-- `/learn typescript/06-design/03-design-patterns lang=go` — concept topic with Go comparison snippets (and Go tasks, if tasks are written)
-- `/learn typescript/07-capstone/01-design-build mode=tasks` — capstone milestones as tasks
+- `/learn csharp/04-shipping mode=cheatsheet` — rebuild the reminder cheatsheets of one module
+- `/learn csharp/06-design/03-design-patterns lang=go` — concept topic with Go comparison snippets (and Go tasks, if tasks are written)
+- `/learn csharp/07-capstone/01-design-build mode=tasks` — capstone milestones as tasks
 If "$ARGUMENTS" above is unreplaced or empty, use the text I typed after the command. If still empty, ask me for the topic.
 
 ## Role

@@ -1,0 +1,1032 @@
+{
+  "stack": "csharp",
+  "generatedAt": "2026-11-10",
+  "totals": {
+    "topics": 50,
+    "topicsDone": 0,
+    "tasks": 0,
+    "tasksDone": 0,
+    "reviewed": 0,
+    "avgScore": null,
+    "checklist": {
+      "total": 650,
+      "done": 0,
+      "percent": 0
+    }
+  },
+  "modules": [
+    {
+      "slug": "01-foundations",
+      "title": "Foundations",
+      "cheatsheet": "modules/01-foundations/cheatsheet.md",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-git",
+          "path": "modules/01-foundations/01-git",
+          "title": "Git & Collaboration",
+          "tech": "Git, GitHub",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/01-git/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 15,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-http-networking",
+          "path": "modules/01-foundations/02-http-networking",
+          "title": "HTTP & Networking",
+          "tech": "HTTP, ASP.NET Core 10 (Kestrel), curl, Chrome DevTools",
+          "status": "not started",
+          "docs": 8,
+          "cheatsheet": "modules/01-foundations/02-http-networking/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 16,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-testing",
+          "path": "modules/01-foundations/03-testing",
+          "title": "Testing",
+          "tech": "xUnit v3, WebApplicationFactory, Testcontainers, Shouldly, NSubstitute",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/03-testing/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 15,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-ci-cd",
+          "path": "modules/01-foundations/04-ci-cd",
+          "title": "CI/CD",
+          "tech": "GitHub Actions, .NET 10 SDK, pnpm, Docker",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/04-ci-cd/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 14,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-code-quality",
+          "path": "modules/01-foundations/05-code-quality",
+          "title": "Code Quality & Tooling",
+          "tech": ".NET analyzers, .editorconfig, dotnet format, C# 14 (nullable)",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/05-code-quality/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 14,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-security",
+          "path": "modules/01-foundations/06-security",
+          "title": "Security Fundamentals",
+          "tech": "ASP.NET Core 10, rate limiting middleware, NetEscapades.AspNetCore.SecurityHeaders, NuGet Audit, Dependabot, CodeQL, gitleaks",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/06-security/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 14,
+            "done": 0
+          }
+        },
+        {
+          "slug": "07-config-environments",
+          "path": "modules/01-foundations/07-config-environments",
+          "title": "Config & Environments",
+          "tech": "ASP.NET Core configuration, Options pattern, user-secrets, Azure Key Vault, Docker Compose",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/07-config-environments/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 13,
+            "done": 0
+          }
+        },
+        {
+          "slug": "08-documentation",
+          "path": "modules/01-foundations/08-documentation",
+          "title": "Documentation",
+          "tech": "Markdown, Microsoft.AspNetCore.OpenApi (OpenAPI 3.1), Scalar, XML doc comments",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/01-foundations/08-documentation/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 13,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "02-frontend",
+      "title": "Frontend",
+      "cheatsheet": "modules/02-frontend/cheatsheet.md",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-html",
+          "path": "modules/02-frontend/01-html",
+          "title": "HTML",
+          "tech": "HTML",
+          "status": "not started",
+          "docs": 5,
+          "cheatsheet": "modules/02-frontend/01-html/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 10,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-css",
+          "path": "modules/02-frontend/02-css",
+          "title": "CSS",
+          "tech": "CSS, then Tailwind CSS 4",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/02-css/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 11,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-javascript",
+          "path": "modules/02-frontend/03-javascript",
+          "title": "JavaScript",
+          "tech": "JavaScript, TypeScript",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/03-javascript/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-framework",
+          "path": "modules/02-frontend/04-framework",
+          "title": "Framework (React / Vue / Angular / Svelte)",
+          "tech": "React 19.2, TypeScript, Vite 8",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/02-frontend/04-framework/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 13,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-state-management",
+          "path": "modules/02-frontend/05-state-management",
+          "title": "State Management",
+          "tech": "React 19.2, TanStack Query 5, Orval",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/05-state-management/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-rendering",
+          "path": "modules/02-frontend/06-rendering",
+          "title": "Rendering Strategies",
+          "tech": "Next.js 16, React 19.2",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/02-frontend/06-rendering/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "07-performance",
+          "path": "modules/02-frontend/07-performance",
+          "title": "Performance",
+          "tech": "React 19.2, Next.js 16, Vite 8, Lighthouse",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/07-performance/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "08-accessibility",
+          "path": "modules/02-frontend/08-accessibility",
+          "title": "Accessibility",
+          "tech": "HTML, React 19.2, axe-core, Playwright",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/08-accessibility/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "09-ux-states",
+          "path": "modules/02-frontend/09-ux-states",
+          "title": "UX States & Error Handling",
+          "tech": "React 19.2, TanStack Query 5, Tailwind CSS 4",
+          "status": "not started",
+          "docs": 5,
+          "cheatsheet": "modules/02-frontend/09-ux-states/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 10,
+            "done": 0
+          }
+        },
+        {
+          "slug": "10-forms",
+          "path": "modules/02-frontend/10-forms",
+          "title": "Forms & Validation",
+          "tech": "React Hook Form 7, Zod 4, Orval, React 19.2",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/10-forms/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "11-security",
+          "path": "modules/02-frontend/11-security",
+          "title": "Frontend Security",
+          "tech": "React 19.2, Next.js 16, CSP",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/11-security/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 11,
+            "done": 0
+          }
+        },
+        {
+          "slug": "12-cross-cutting",
+          "path": "modules/02-frontend/12-cross-cutting",
+          "title": "Cross-Cutting Frontend",
+          "tech": "React 19.2, TypeScript, Tailwind CSS 4",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/12-cross-cutting/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 11,
+            "done": 0
+          }
+        },
+        {
+          "slug": "13-testing-monitoring",
+          "path": "modules/02-frontend/13-testing-monitoring",
+          "title": "Frontend Testing & Monitoring",
+          "tech": "Vitest 4, Testing Library, MSW, Playwright, Sentry",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/02-frontend/13-testing-monitoring/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "03-backend",
+      "title": "Backend",
+      "cheatsheet": "modules/03-backend/cheatsheet.md",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-language-runtime",
+          "path": "modules/03-backend/01-language-runtime",
+          "title": "Language & Runtime",
+          "tech": "C# 14, .NET 10 LTS",
+          "status": "not started",
+          "docs": 8,
+          "cheatsheet": "modules/03-backend/01-language-runtime/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 16,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-api-design",
+          "path": "modules/03-backend/02-api-design",
+          "title": "API Design",
+          "tech": "ASP.NET Core 10 (Minimal APIs, controllers), Microsoft.AspNetCore.OpenApi, Orval",
+          "status": "not started",
+          "docs": 8,
+          "cheatsheet": "modules/03-backend/02-api-design/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 18,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-databases",
+          "path": "modules/03-backend/03-databases",
+          "title": "Databases",
+          "tech": "SQL Server 2025, EF Core 10, Dapper, Azure SQL",
+          "status": "not started",
+          "docs": 8,
+          "cheatsheet": "modules/03-backend/03-databases/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 17,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-auth",
+          "path": "modules/03-backend/04-auth",
+          "title": "Authentication & Authorization",
+          "tech": "ASP.NET Core Identity, JWT bearer, cookie authentication, Data Protection, Redis 8",
+          "status": "not started",
+          "docs": 8,
+          "cheatsheet": "modules/03-backend/04-auth/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 16,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-validation-abuse",
+          "path": "modules/03-backend/05-validation-abuse",
+          "title": "Validation & Abuse Protection",
+          "tech": "ASP.NET Core 10 validation, FluentValidation, rate limiting middleware, Redis 8",
+          "status": "not started",
+          "docs": 5,
+          "cheatsheet": "modules/03-backend/05-validation-abuse/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-caching",
+          "path": "modules/03-backend/06-caching",
+          "title": "Caching",
+          "tech": "HybridCache, IMemoryCache, Redis 8, output caching",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/03-backend/06-caching/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "07-background-jobs",
+          "path": "modules/03-backend/07-background-jobs",
+          "title": "Background Jobs & Messaging",
+          "tech": "BackgroundService, Channels, Hangfire, Azure Service Bus",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/03-backend/07-background-jobs/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 15,
+            "done": 0
+          }
+        },
+        {
+          "slug": "08-reliability",
+          "path": "modules/03-backend/08-reliability",
+          "title": "Reliability & Resilience",
+          "tech": "Microsoft.Extensions.Http.Resilience (Polly 8), ASP.NET Core health checks, Hangfire",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/03-backend/08-reliability/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 14,
+            "done": 0
+          }
+        },
+        {
+          "slug": "09-scalability",
+          "path": "modules/03-backend/09-scalability",
+          "title": "Scalability & Performance",
+          "tech": "ASP.NET Core 10, SQL Server 2025, Redis 8, k6, BenchmarkDotNet, YARP",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/03-backend/09-scalability/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 14,
+            "done": 0
+          }
+        },
+        {
+          "slug": "10-observability",
+          "path": "modules/03-backend/10-observability",
+          "title": "Observability",
+          "tech": "ILogger, OpenTelemetry, Aspire dashboard, Application Insights, Sentry",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/03-backend/10-observability/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 15,
+            "done": 0
+          }
+        },
+        {
+          "slug": "11-architecture",
+          "path": "modules/03-backend/11-architecture",
+          "title": "Architecture",
+          "tech": "ASP.NET Core 10, C# 14, built-in DI, Mapperly",
+          "status": "not started",
+          "docs": 8,
+          "cheatsheet": "modules/03-backend/11-architecture/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 14,
+            "done": 0
+          }
+        },
+        {
+          "slug": "12-integrations",
+          "path": "modules/03-backend/12-integrations",
+          "title": "Common Integrations",
+          "tech": "Stripe.net, Azure Communication Services Email, Azure Blob Storage, Hangfire",
+          "status": "not started",
+          "docs": 8,
+          "cheatsheet": "modules/03-backend/12-integrations/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "04-shipping",
+      "title": "Shipping",
+      "cheatsheet": "modules/04-shipping/cheatsheet.md",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-containers",
+          "path": "modules/04-shipping/01-containers",
+          "title": "Containers",
+          "tech": "Docker, Docker Compose, .NET SDK containers, Aspire",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/04-shipping/01-containers/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 13,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-cloud",
+          "path": "modules/04-shipping/02-cloud",
+          "title": "Cloud",
+          "tech": "Azure (Container Apps, Azure SQL, Azure Managed Redis, Key Vault, Blob Storage, Service Bus)",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/04-shipping/02-cloud/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-iac",
+          "path": "modules/04-shipping/03-iac",
+          "title": "Infrastructure as Code",
+          "tech": "Bicep, Azure Developer CLI (azd), GitHub Actions",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/04-shipping/03-iac/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 13,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-deployments",
+          "path": "modules/04-shipping/04-deployments",
+          "title": "Deployments",
+          "tech": "GitHub Actions, Docker, Azure Container Registry, Azure Container Apps, azd",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/04-shipping/04-deployments/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 13,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-data-safety",
+          "path": "modules/04-shipping/05-data-safety",
+          "title": "Data Safety",
+          "tech": "Azure SQL backups, SQL Server 2025, EF Core migrations",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/04-shipping/05-data-safety/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 11,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-incident-response",
+          "path": "modules/04-shipping/06-incident-response",
+          "title": "Incident Response",
+          "tech": "Application Insights, Azure Monitor, Sentry",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/04-shipping/06-incident-response/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 13,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "05-practice",
+      "title": "Practice",
+      "cheatsheet": "modules/05-practice/cheatsheet.md",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-engineering-practice",
+          "path": "modules/05-practice/01-engineering-practice",
+          "title": "Engineering Practice",
+          "tech": "Git, GitHub, GitHub Copilot",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/05-practice/01-engineering-practice/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "06-design",
+      "title": "Software Design & Architecture",
+      "cheatsheet": "modules/06-design/cheatsheet.md",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-paradigms-oop",
+          "path": "modules/06-design/01-paradigms-oop",
+          "title": "Paradigms & OOP",
+          "tech": "C# 14",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/01-paradigms-oop/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 10,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-principles",
+          "path": "modules/06-design/02-principles",
+          "title": "Design Principles & SOLID",
+          "tech": "C# 14",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/02-principles/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 11,
+            "done": 0
+          }
+        },
+        {
+          "slug": "03-design-patterns",
+          "path": "modules/06-design/03-design-patterns",
+          "title": "Design Patterns",
+          "tech": "C# 14, ASP.NET Core 10",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/06-design/03-design-patterns/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 13,
+            "done": 0
+          }
+        },
+        {
+          "slug": "04-architecture-styles",
+          "path": "modules/06-design/04-architecture-styles",
+          "title": "Architecture Styles",
+          "tech": "C#, ASP.NET Core 10, Next.js 16, React 19.2",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/06-design/04-architecture-styles/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "05-domain-driven-design",
+          "path": "modules/06-design/05-domain-driven-design",
+          "title": "Domain-Driven Design",
+          "tech": "C# 14, EF Core 10, SQL Server 2025",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/06-design/05-domain-driven-design/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "06-system-design",
+          "path": "modules/06-design/06-system-design",
+          "title": "System Design",
+          "tech": "SQL Server 2025, Redis 8, Azure Service Bus, Azure",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/06-design/06-system-design/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "07-distributed-systems",
+          "path": "modules/06-design/07-distributed-systems",
+          "title": "Distributed Systems",
+          "tech": "SQL Server 2025, Redis 8, Azure Service Bus",
+          "status": "not started",
+          "docs": 7,
+          "cheatsheet": "modules/06-design/07-distributed-systems/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 11,
+            "done": 0
+          }
+        },
+        {
+          "slug": "08-data-structures-algorithms",
+          "path": "modules/06-design/08-data-structures-algorithms",
+          "title": "Data Structures & Algorithms",
+          "tech": "C# 14, .NET 10 collections, BenchmarkDotNet",
+          "status": "not started",
+          "docs": 10,
+          "cheatsheet": "modules/06-design/08-data-structures-algorithms/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 19,
+            "done": 0
+          }
+        }
+      ]
+    },
+    {
+      "slug": "07-capstone",
+      "title": "Capstone",
+      "cheatsheet": "modules/07-capstone/cheatsheet.md",
+      "percent": 0,
+      "topicsDone": 0,
+      "topics": [
+        {
+          "slug": "01-design-build",
+          "path": "modules/07-capstone/01-design-build",
+          "title": "Design & Build",
+          "tech": "Next.js 16, ASP.NET Core 10, C# 14, SQL Server 2025, EF Core 10, Redis 8, Hangfire",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/07-capstone/01-design-build/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        },
+        {
+          "slug": "02-pre-launch",
+          "path": "modules/07-capstone/02-pre-launch",
+          "title": "Pre-Launch Checklist",
+          "tech": "Next.js 16, ASP.NET Core 10, SQL Server 2025, Redis 8, Azure, Bicep",
+          "status": "not started",
+          "docs": 6,
+          "cheatsheet": "modules/07-capstone/02-pre-launch/docs/cheatsheet.md",
+          "tasks": {
+            "total": 0,
+            "done": 0
+          },
+          "reviewed": 0,
+          "score": null,
+          "checklist": {
+            "total": 12,
+            "done": 0
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 Arguments: $ARGUMENTS
 Format: new <name>  |  revisit <layer>[, <layer>] [stack=<name>]  |  (empty)
-Examples: `new python` · `new go` · `revisit Database, Auth stack=typescript`
+Examples: `new python` · `new go` · `revisit Database, Auth stack=csharp`
 If "$ARGUMENTS" above is unreplaced, use the text I typed after the command.
 - MODE new: full discussion from my situation; creates the stack folder stacks/<name>/. LAYERS all.
 - MODE revisit: discuss only the named layers of one stack and change only those rows. Resolve the stack as CONVENTIONS.md → Commands says.
