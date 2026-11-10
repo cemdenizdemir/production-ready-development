@@ -11,64 +11,6 @@ Fundamentals to production, one topic at a time, in any stack.<br>
 
 <br>
 
-## Quick start
-
-**You need:** Git · Node 18+ (for the sync script) · an AI coding agent that can read and write files (Claude Code, Cursor, Copilot agent mode)
-
-**First time only**
-
-```bash
-git clone <your-repo-url> && cd <repo-name>
-```
-
-1. Open the folder in your AI agent.
-2. Pick a stack in the dashboard below (C# is open by default; click a stack to open or close it), or run `/stack new <name>` to add one.
-3. Every topic of the C# stack already has lessons and a cheatsheet in `docs/`. Start with `stacks/csharp/modules/03-backend/01-language-runtime`, or follow the stack's learn order in its `STACK.md`.
-
-**Commands**
-
-| Command | What it does |
-|:--|:--|
-| `/stack new <name>` | Decide a new stack and create `stacks/<name>/` |
-| `/stack revisit <layers> stack=<name>` | Change layers of an existing stack: `/stack revisit Database, Auth stack=csharp` |
-| `/learn <stack>/<module>/<topic>` | Writes lessons and a cheatsheet into `docs/`, and tasks into `tasks/` |
-| `/learn <topic> mode=tasks` | Writes tasks only, from the lessons already in `docs/` |
-| `/learn <target> mode=docs` | Lessons and cheatsheet only. Target: a topic, a module, or `all` |
-| `/learn <target> mode=cheatsheet` | Rebuilds the reminder cheatsheets only |
-| `/review <stack>/<module>/<topic> [Txx]` | Reviews a finished task on a copy, and writes `REVIEW.md` |
-| `/design "<problem>" stack=<name>` | Interactive system design, DDD, or architecture session; records `DESIGN.md` as a task |
-| `/learn <topic> lang=go` | Adds comparison snippets (and tasks) in another language for concept topics |
-
-Options: `/learn … level=beginner focus=1,3` · `/review … pending` reviews every finished, unreviewed task.<br>
-Start a topic path with the stack (`csharp/03-backend/01-language-runtime`) or add `stack=<name>`; with several stacks and none given, the command asks. Paths accept numbers or names: `csharp/03-backend/01-language-runtime`, `csharp/backend/language-runtime`, or `01-language-runtime`.
-
-**Cheatsheets** are tables of what exists, one row per thing, not tutorials: `docs/cheatsheet.md` per topic, `modules/<module>/cheatsheet.md` per module, `CHEATSHEET.md` per stack. Open them from the **Cheatsheet** column below.
-
-**The loop**
-
-1. Read the topic's `docs/`, then `/learn csharp/03-backend/01-language-runtime mode=tasks` to get tasks.
-2. Write your code in `tasks/T01-*/` and set `status: done` in its `TASK.md`.
-3. `/review csharp/03-backend/01-language-runtime T01`, then compare your code with `reviews/T01-*/`.
-4. If the verdict is *revise*, fix your code and review again.
-
-<details>
-<summary><b>Troubleshooting</b></summary>
-<br>
-
-| Problem | Fix |
-|:--|:--|
-| Slash commands don't appear | Tell the agent: `Read .claude/commands/learn.md and follow it. Arguments: csharp/03-backend/01-language-runtime` |
-| Stats look wrong | `node scripts/sync.mjs` |
-| No Node installed | Ask the agent to update the AUTO blocks by hand (see [CONVENTIONS](.claude/CONVENTIONS.md)) |
-| A command asks which stack | Several stacks have that topic. Prefix the path (`csharp/…`) or add `stack=<name>`. |
-| A topic shows ○ but has lessons | Expected: a topic starts (◔) once it has tasks. Run `/learn <topic> mode=tasks`. |
-| Prompt asks about the stack again | The topic's row in that stack's `STACK.md` is `undecided`. Answer once and it is saved. |
-| Want to change a decided tool | `/stack revisit <layer> stack=<name>` |
-
-</details>
-
-<br>
-
 ## Stacks
 
 Each stack is a full track in its own folder under `stacks/` with its own stack decisions, lessons, tasks, reviews, and progress. The commands are shared.
@@ -359,6 +301,66 @@ Module cheatsheet: [Capstone](stacks/typescript/modules/07-capstone/cheatsheet.m
 
 </details>
 <!-- /AUTO:STACKS -->
+
+<br>
+
+## Quick start
+
+**You need:** Git · Node 18+ (for the sync script) · an AI coding agent that can read and write files (Claude Code, Cursor, Copilot agent mode)
+
+**First time only**
+
+```bash
+git clone <your-repo-url> && cd <repo-name>
+```
+
+1. Open the folder in your AI agent.
+2. Pick a stack in the dashboard below (C# is open by default; click a stack to open or close it), or run `/stack new <name>` to add one.
+3. Every topic of the C# stack already has lessons and a cheatsheet in `docs/`. Start with `stacks/csharp/modules/03-backend/01-language-runtime`, or follow the stack's learn order in its `STACK.md`.
+
+**Commands**
+
+| Command | What it does |
+|:--|:--|
+| `/stack new <name>` | Decide a new stack and create `stacks/<name>/` |
+| `/stack revisit <layers> stack=<name>` | Change layers of an existing stack: `/stack revisit Database, Auth stack=csharp` |
+| `/learn <stack>/<module>/<topic>` | Writes lessons and a cheatsheet into `docs/`, and tasks into `tasks/` |
+| `/learn <topic> mode=tasks` | Writes tasks only, from the lessons already in `docs/` |
+| `/learn <target> mode=docs` | Lessons and cheatsheet only. Target: a topic, a module, or `all` |
+| `/learn <target> mode=cheatsheet` | Rebuilds the reminder cheatsheets only |
+| `/review <stack>/<module>/<topic> [Txx]` | Reviews a finished task on a copy, and writes `REVIEW.md` |
+| `/design "<problem>" stack=<name>` | Interactive system design, DDD, or architecture session; records `DESIGN.md` as a task |
+| `/learn <topic> lang=go` | Adds comparison snippets (and tasks) in another language for concept topics |
+
+Options: `/learn … level=beginner focus=1,3` · `/review … pending` reviews every finished, unreviewed task.<br>
+Start a topic path with the stack (`csharp/03-backend/01-language-runtime`) or add `stack=<name>`; with several stacks and none given, the command asks. Paths accept numbers or names: `csharp/03-backend/01-language-runtime`, `csharp/backend/language-runtime`, or `01-language-runtime`.
+
+**Cheatsheets** are tables of what exists, one row per thing, not tutorials: `docs/cheatsheet.md` per topic, `modules/<module>/cheatsheet.md` per module, `CHEATSHEET.md` per stack. Open them from the **Cheatsheet** column below.
+
+**The loop**
+
+1. Read the topic's `docs/`, then `/learn csharp/03-backend/01-language-runtime mode=tasks` to get tasks.
+2. Write your code in `tasks/T01-*/` and set `status: done` in its `TASK.md`.
+3. `/review csharp/03-backend/01-language-runtime T01`, then compare your code with `reviews/T01-*/`.
+4. If the verdict is *revise*, fix your code and review again.
+
+<details>
+<summary><b>Troubleshooting</b></summary>
+<br>
+
+| Problem | Fix |
+|:--|:--|
+| Slash commands don't appear | Tell the agent: `Read .claude/commands/learn.md and follow it. Arguments: csharp/03-backend/01-language-runtime` |
+| Stats look wrong | `node scripts/sync.mjs` |
+| No Node installed | Ask the agent to update the AUTO blocks by hand (see [CONVENTIONS](.claude/CONVENTIONS.md)) |
+| A command asks which stack | Several stacks have that topic. Prefix the path (`csharp/…`) or add `stack=<name>`. |
+| A topic shows ○ but has lessons | Expected: a topic starts (◔) once it has tasks. Run `/learn <topic> mode=tasks`. |
+| Prompt asks about the stack again | The topic's row in that stack's `STACK.md` is `undecided`. Answer once and it is saved. |
+| Want to change a decided tool | `/stack revisit <layer> stack=<name>` |
+
+</details>
+
+<br>
 
 <br>
 
