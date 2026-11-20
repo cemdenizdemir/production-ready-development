@@ -24,7 +24,7 @@ Each stack is a full track in its own folder under `stacks/` with its own stack 
 
 <code>▱▱▱▱▱▱▱▱▱▱</code>&nbsp; <b>0%</b> mastery
 
-<b>0</b>/50 topics &nbsp;·&nbsp; <b>0</b>/0 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-10
+<b>0</b>/50 topics &nbsp;·&nbsp; <b>0</b>/0 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-18
 
 <sub>[Dashboard](stacks/csharp/README.md) &nbsp;·&nbsp; [STACK](stacks/csharp/STACK.md) &nbsp;·&nbsp; [CHEATSHEET](stacks/csharp/CHEATSHEET.md)</sub>
 
@@ -167,7 +167,7 @@ Module cheatsheet: [Capstone](stacks/csharp/modules/07-capstone/cheatsheet.md)
 
 <code>▱▱▱▱▱▱▱▱▱▱</code>&nbsp; <b>0%</b> mastery
 
-<b>0</b>/49 topics &nbsp;·&nbsp; <b>0</b>/4 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-10
+<b>0</b>/49 topics &nbsp;·&nbsp; <b>0</b>/4 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-18
 
 <sub>[Dashboard](stacks/typescript/README.md) &nbsp;·&nbsp; [STACK](stacks/typescript/STACK.md) &nbsp;·&nbsp; [CHEATSHEET](stacks/typescript/CHEATSHEET.md)</sub>
 
@@ -331,6 +331,7 @@ git clone <your-repo-url> && cd <repo-name>
 | `/review <stack>/<module>/<topic> [Txx]` | Reviews a finished task on a copy, and writes `REVIEW.md` |
 | `/design "<problem>" stack=<name>` | Interactive system design, DDD, or architecture session; records `DESIGN.md` as a task |
 | `/learn <topic> lang=go` | Adds comparison snippets (and tasks) in another language for concept topics |
+| `/cards <stack>/<module>/<topic>` | Writes review cards into the topic's `cards.md`, for spaced repetition in an AI chat project ([study/](study/README.md)) |
 
 Options: `/learn … level=beginner focus=1,3` · `/review … pending` reviews every finished, unreviewed task.<br>
 Start a topic path with the stack (`csharp/03-backend/01-language-runtime`) or add `stack=<name>`; with several stacks and none given, the command asks. Paths accept numbers or names: `csharp/03-backend/01-language-runtime`, `csharp/backend/language-runtime`, or `01-language-runtime`.

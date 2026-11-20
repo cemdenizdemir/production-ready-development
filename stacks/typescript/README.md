@@ -12,7 +12,7 @@ Node.js 26 · Express 5 · React 19.2 · Next.js 16 · PostgreSQL 18<br>
 <!-- AUTO:STATS -->
 <code>▱▱▱▱▱▱▱▱▱▱</code>&nbsp; <b>0%</b> mastery
 
-<b>0</b>/49 topics &nbsp;·&nbsp; <b>0</b>/4 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-09
+<b>0</b>/49 topics &nbsp;·&nbsp; <b>0</b>/4 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-18
 <!-- /AUTO:STATS -->
 
 <sub>○ not started &nbsp; ◔ learning &nbsp; ◑ building &nbsp; ◕ reviewing &nbsp; ● done</sub>

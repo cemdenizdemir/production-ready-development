@@ -6,9 +6,11 @@ The repo is language-agnostic. Each tech stack is a self-contained track under
 stacks/<stack>/. The prompts, these rules, and the sync script are shared.
 
 README.md               repo home; the stacks table (AUTO:STACKS) is generated
-.claude/commands/       the prompts and sources of truth: learn, review, stack, design
+.claude/commands/       the prompts and sources of truth: learn, review, stack, design, cards
 .claude/CONVENTIONS.md  this file
 scripts/sync.mjs        recalculates every stack's dashboard and progress.json
+study/                  spaced repetition: PROJECT-PROMPT.md (chat tutor; source of truth
+                        for the card format and rules), progress.md (my review log)
 
 stacks/<stack>/
   README.md           dashboard: frontmatter, AUTO:STATS and AUTO:MODULES
@@ -22,6 +24,7 @@ stacks/<stack>/modules/NN-module/
 stacks/<stack>/modules/NN-module/NN-topic/
   README.md           checklist + tech
   docs/               00-overview.md, NN-slug.md, cheatsheet.md
+  cards.md            review deck written by /cards; append only, ids never change
   tasks/Txx-slug/     TASK.md + learner's code
   reviews/Txx-slug/   REVIEW.md + annotated copy of the code
   reviews/_archive/   older reviews
@@ -50,6 +53,7 @@ are relative to the stack folder: `modules/01-foundations/01-git`.
 /review <module>/<topic> [Txx | pending] [stack=…]
 /stack  new <name> | revisit <layers> [stack=…]
 /design <problem> [stack=…] [area=system|ddd|architecture] [mode=interview|doc] [time=…]
+/cards  <topic> [stack=…] [lessons=01,03] [sheet=star|all|none]
 
 Resolve the stack first:
 1. A `stack=<name>` argument, or a topic path that starts with a stack name

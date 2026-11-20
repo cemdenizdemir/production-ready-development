@@ -32,6 +32,7 @@ tech: Git, GitHub
 - [05 · Pull requests and a protected main](docs/05-pull-requests-and-protection.md)
 - [06 · Signing, tags, and releases](docs/06-signing-and-releases.md)
 - [Cheatsheet](docs/cheatsheet.md)
+- [Cards](cards.md)
 
 ## Tasks
 - [T01 · Repo bootstrap](tasks/T01-repo-bootstrap/TASK.md)

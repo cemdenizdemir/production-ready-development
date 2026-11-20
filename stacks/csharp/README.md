@@ -12,7 +12,7 @@ summary: .NET 10 · ASP.NET Core 10 · EF Core 10 · SQL Server 2025 · Azure ·
 <!-- AUTO:STATS -->
 <code>▱▱▱▱▱▱▱▱▱▱</code>&nbsp; <b>0%</b> mastery
 
-<b>0</b>/50 topics &nbsp;·&nbsp; <b>0</b>/0 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-10
+<b>0</b>/50 topics &nbsp;·&nbsp; <b>0</b>/0 tasks &nbsp;·&nbsp; <b>0</b> reviewed &nbsp;·&nbsp; <b>—</b> avg score &nbsp;·&nbsp; synced 2026-11-18
 <!-- /AUTO:STATS -->
 
 <sub>○ not started &nbsp; ◔ learning &nbsp; ◑ building &nbsp; ◕ reviewing &nbsp; ● done</sub>
